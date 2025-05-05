@@ -1,0 +1,467 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>powpowerman.knownguid module &mdash; pow  ドキュメント</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=c033477b"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=4755f45a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="powdeviceinfo package" href="powdeviceinfo.html" />
+    <link rel="prev" title="powpowerman package" href="powpowerman.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pow
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../powsid.html">powsidパッケージ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../powguid.html">powguidパッケージ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../powpowerman.html">powpowermanパッケージ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../powdeviceinfo.html">powdeviceinfoパッケージ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="powsid.html">powsid package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="powguid.html">powguid package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="powpowerman.html">powpowerman package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerEntry"><code class="docutils literal notranslate"><span class="pre">PowerEntry</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerKnownSchemeFactory"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerKnownSubGroupGuid"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerPlatform"><code class="docutils literal notranslate"><span class="pre">PowerPlatform</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerPlatformRole"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerPossibleSetting"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerScheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerSetting"><code class="docutils literal notranslate"><span class="pre">PowerSetting</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerSettingValue"><code class="docutils literal notranslate"><span class="pre">PowerSettingValue</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerSettingValueType"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.html#powpowerman.PowerSubGroup"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="powpowerman.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">powpowerman.knownguid module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#powpowerman.knownguid.PowerKnownSettingGuid"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#powpowerman.knownguid.PowerKnownSubgroupGuid"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#powpowerman.knownguid.PowerModeGuids"><code class="docutils literal notranslate"><span class="pre">PowerModeGuids</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="powdeviceinfo.html">powdeviceinfo package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">索引</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">モジュール索引</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pow</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="powpowerman.html">powpowerman package</a></li>
+      <li class="breadcrumb-item active">powpowerman.knownguid module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/apiref/powpowerman.knownguid.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-powpowerman.knownguid">
+<span id="powpowerman-knownguid-module"></span><h1>powpowerman.knownguid module<a class="headerlink" href="#module-powpowerman.knownguid" title="Link to this heading"></a></h1>
+<p>既知の電力設定GUIDを提供します。</p>
+<p>GCの管理するオブジェクトを減らすため、このファイルでは定数を静的メソッドとして実装します。</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.knownguid.</span></span><span class="sig-name descname"><span class="pre">PowerKnownSettingGuid</span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>既知の電力設定のGUID。</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.adaptivepowerbehavior_input_controller_state">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">adaptivepowerbehavior_input_controller_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.adaptivepowerbehavior_input_controller_state" title="Link to this definition"></a></dt>
+<dd><p>入力コントローラーのグローバルシステム状態。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.adaptivepowerbehavior_non_adaptive_input_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">adaptivepowerbehavior_non_adaptive_input_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.adaptivepowerbehavior_non_adaptive_input_timeout" title="Link to this definition"></a></dt>
+<dd><p>&quot;ユーザー不明状態の入力タイムアウト秒数。0は無効化を示します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.disk_adaptive_powerdown">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">disk_adaptive_powerdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.disk_adaptive_powerdown" title="Link to this definition"></a></dt>
+<dd><p>OSがディスクの電源オフに適応型タイマーが使用するか。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.disk_burst_ignore_threshold">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">disk_burst_ignore_threshold</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.disk_burst_ignore_threshold" title="Link to this definition"></a></dt>
+<dd><p>ディスク待機時間の計算時に無視する連続アクティブ時間。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.disk_idle_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">disk_idle_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.disk_idle_timeout" title="Link to this definition"></a></dt>
+<dd><p>IO結合の設定を考慮して、最後のディスクアクセスからディスクの電源を切るまでのミリ秒。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.disk_max_power">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">disk_max_power</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.disk_max_power" title="Link to this definition"></a></dt>
+<dd><p>&quot;最大電力消費レベル。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.disk_nvme_noppme">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">disk_nvme_noppme</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.disk_nvme_noppme" title="Link to this definition"></a></dt>
+<dd><p>NVMeのNon-Operational Power State Permissive Modeが有効か。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.disk_powerdown_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">disk_powerdown_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.disk_powerdown_timeout" title="Link to this definition"></a></dt>
+<dd><p>最後のディスクアクセスからディスクの電源を切るまでの秒数。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_deep_sleep_enabled">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">idleresidency_deep_sleep_enabled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_deep_sleep_enabled" title="Link to this definition"></a></dt>
+<dd><p>ディープスリープポリシー設定。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_disk_coalescing_powerdown_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">idleresidency_disk_coalescing_powerdown_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_disk_coalescing_powerdown_timeout" title="Link to this definition"></a></dt>
+<dd><p>IO結合がアクティブな場合に最後のディスクアクセスから電源を切るまでのミリ秒数。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_execution_required_request_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">idleresidency_execution_required_request_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_execution_required_request_timeout" title="Link to this definition"></a></dt>
+<dd><p>CS Enterから実行要求リクエストを非活性化するまでの待機秒数。</p>
+<blockquote>
+<div><p>0：実行電力要求は無効化されています。</p>
+</div></blockquote>
+<p>-1：実行電力要求は常に活性化されています。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_allow_awaymode">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_allow_awaymode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_allow_awaymode" title="Link to this definition"></a></dt>
+<dd><p>退席モードが有効か。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_critical_power_transition">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_critical_power_transition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_critical_power_transition" title="Link to this definition"></a></dt>
+<dd><p>スリープ状態移行の切迫性制御。切迫スリープ移行はアプリケーション、システム、ドライバーに通知されません。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_hibernate_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_hibernate_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_hibernate_timeout" title="Link to this definition"></a></dt>
+<dd><p>ハイバネーション(S4)までの待機秒数。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_idle_threshold">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_idle_threshold</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_idle_threshold" title="Link to this definition"></a></dt>
+<dd><p>待機閾値%。Windows 7 (Windows 6.1)で廃止されました。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_budget_grace_period">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_standby_budget_grace_period</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_budget_grace_period" title="Link to this definition"></a></dt>
+<dd><p>Standby Budget Grace Period。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_budget_percent">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_standby_budget_percent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_budget_percent" title="Link to this definition"></a></dt>
+<dd><p>Standby Budget Percent。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_standby_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_timeout" title="Link to this definition"></a></dt>
+<dd><p>スタンバイモード（S1、S2、S3）へ移行する前の「待機状態」と判定する秒数。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_system_awaymode">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_system_awaymode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_system_awaymode" title="Link to this definition"></a></dt>
+<dd><p>退席モード中か。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_unattend_sleep_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_unattend_sleep_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_unattend_sleep_timeout" title="Link to this definition"></a></dt>
+<dd><p>システム無人スリープタイムアウト後に再スリープするまでの秒数。
+0は標準standby/hibernate待機ポリシーの使用を示します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.sleep_user_presence_prediction">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep_user_presence_prediction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.sleep_user_presence_prediction" title="Link to this definition"></a></dt>
+<dd><p>User Presence Predictionモードが有効か。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_display_brightness">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_adaptive_display_brightness</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_display_brightness" title="Link to this definition"></a></dt>
+<dd><p>OSが画面の適応型調光に環境光センサーを使うか。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_percent_increase">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_adaptive_percent_increase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_percent_increase" title="Link to this definition"></a></dt>
+<dd><p>適応型調光タイムアウトの増加量。Windows 8.1で廃止されました</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_powerdown">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_adaptive_powerdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_powerdown" title="Link to this definition"></a></dt>
+<dd><p>OSが画面の電源オフに（以前の動作に基づく）適応型タイマーを使うか。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_advanced_color_quality_bits">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_advanced_color_quality_bits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_advanced_color_quality_bits" title="Link to this definition"></a></dt>
+<dd><p>Advanced Color対応ディスプレイで視覚効果とバッテリー寿命のどちらを優先するか。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_allow_display_required">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_allow_display_required</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_allow_display_required" title="Link to this definition"></a></dt>
+<dd><p>電力要求に必要なディスプレイを作成可能か。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_annoyance_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_annoyance_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_annoyance_timeout" title="Link to this definition"></a></dt>
+<dd><p>適応型調光のオン・オフ。Windows 8.1で廃止されました。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_console_display_state">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_console_display_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_console_display_state" title="Link to this definition"></a></dt>
+<dd><p>現在のモニター状態。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_console_lock_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_console_lock_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_console_lock_timeout" title="Link to this definition"></a></dt>
+<dd><p>インタラクティブコンソールのロックから（センサーがユーザー不在を示してから）画面の電源を切るまでの秒数。0は無効化を示します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_current_monitor_beightness">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_current_monitor_beightness</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_current_monitor_beightness" title="Link to this definition"></a></dt>
+<dd><p>現在のモニターの明るさ。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_devicepowerpolicy_brightness">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_devicepowerpolicy_brightness</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_devicepowerpolicy_brightness" title="Link to this definition"></a></dt>
+<dd><p>通常状態の画面の明るさポリシー。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_devicepowerpolicy_dim_brightness">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_devicepowerpolicy_dim_brightness</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_devicepowerpolicy_dim_brightness" title="Link to this definition"></a></dt>
+<dd><p>調光状態の画面の明るさポリシー。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_dim_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_dim_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_dim_timeout" title="Link to this definition"></a></dt>
+<dd><p>ユーザーの最終入力から画面を暗くするまでの秒数。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_hibernate_fasts4_policy">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_hibernate_fasts4_policy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_hibernate_fasts4_policy" title="Link to this definition"></a></dt>
+<dd><p>高速ハイバネーション(S4)対応時に有効か。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_monitor_power_on">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_monitor_power_on</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_monitor_power_on" title="Link to this definition"></a></dt>
+<dd><p>モニターの電力がオンか。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSettingGuid.video_powerdown_timeout">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video_powerdown_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSettingGuid.video_powerdown_timeout" title="Link to this definition"></a></dt>
+<dd><p>ユーザーの最終入力から画面の電源を切るまでの秒数。</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.knownguid.</span></span><span class="sig-name descname"><span class="pre">PowerKnownSubgroupGuid</span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>既知の電力サブグループGUID。</p>
+<p>電力サブグループの名前は電力サブグループのプレフィックスで使用するため、
+名前には長くなりすぎないようにハイフンは用いません。</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.adaptivepowerbehavior">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">adaptivepowerbehavior</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.adaptivepowerbehavior" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.battery">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">battery</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.battery" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.disk">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">disk</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.disk" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.energysaver">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">energysaver</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.energysaver" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.graphics">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">graphics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.graphics" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.idleresiliency">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">idleresiliency</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.idleresiliency" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.intsteer">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">intsteer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.intsteer" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.pciexpress">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pciexpress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.pciexpress" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.processor">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">processor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.processor" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.sleep">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sleep</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.sleep" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.system_button">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">system_button</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.system_button" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerKnownSubgroupGuid.video">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">video</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerKnownSubgroupGuid.video" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerModeGuids">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.knownguid.</span></span><span class="sig-name descname"><span class="pre">PowerModeGuids</span></span><a class="headerlink" href="#powpowerman.knownguid.PowerModeGuids" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>電力モードのGUID。</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerModeGuids.best_efficiency">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">best_efficiency</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerModeGuids.best_efficiency" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerModeGuids.best_performance">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">best_performance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerModeGuids.best_performance" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerModeGuids.none">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">none</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerModeGuids.none" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.knownguid.PowerModeGuids.performance">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">performance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></span><a class="headerlink" href="#powpowerman.knownguid.PowerModeGuids.performance" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="powpowerman.html" class="btn btn-neutral float-left" title="powpowerman package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="powdeviceinfo.html" class="btn btn-neutral float-right" title="powdeviceinfo package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, poti-san.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
