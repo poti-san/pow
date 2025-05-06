@@ -174,6 +174,7 @@ class _SID_IDENTIFIER_AUTHORITY(Structure):
 
 class SID:
     """Windowsのセキュリティ識別子。
+
     Examples:
         >>> sid1 = SID.create_wellknownsid(WellKnownSIDType.NT_AUTHORITY)
         >>> sid2 = SID.lookup_user()
