@@ -124,7 +124,7 @@ class PowerKnownSettingGuid:
 
     @staticmethod
     def video_adaptive_percent_increase() -> Guid:
-        """適応型調光タイムアウトの増加量。Windows 8.1で廃止されました"""
+        """適応型調光タイムアウトの増加量。Windows 8.1で廃止されました。"""
         return Guid.from_define(0xEED904DF, 0xB142, 0x4183, 0xB1, 0x0B, 0x5A, 0x11, 0x97, 0xA3, 0x78, 0x64)
 
     @staticmethod
