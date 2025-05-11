@@ -1,0 +1,1398 @@
+
+<!DOCTYPE html>
+
+
+<html lang="ja" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>powpowerman package &#8212; pow  ドキュメント</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=1cf7f4d9"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/translations.js?v=4755f45a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'apiref/powpowerman';</script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="powpowerman.knownguid module" href="powpowerman.knownguid.html" />
+    <link rel="prev" title="powguid package" href="powguid.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="ja"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">pow  ドキュメント</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">検索</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../package_summary/index.html">パッケージの概要</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../package_summary/powsid.html">powsidパッケージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../package_summary/powguid.html">powguidパッケージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../package_summary/powpowerman.html">powpowermanパッケージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../package_summary/powdeviceinfo.html">powdeviceinfoパッケージ</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../apiref.html">APIドキュメント</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="powsid.html">powsid package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="powguid.html">powguid package</a></li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">powpowerman package</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html">powpowerman.knownguid module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="powdeviceinfo.html">powdeviceinfo package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="powdeviceinfo.cfgmgr.html">powdeviceinfo.cfgmgr package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="powdeviceinfo.cfgmgr.crresult.html">powdeviceinfo.cfgmgr.crresult module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html">powdeviceinfo.devprop module</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">索引</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">モジュール索引</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全画面モード"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>powpowerman package</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目次 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry"><code class="docutils literal notranslate"><span class="pre">PowerEntry</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.description"><code class="docutils literal notranslate"><span class="pre">PowerEntry.description</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.friendlyname"><code class="docutils literal notranslate"><span class="pre">PowerEntry.friendlyname</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.iconres_specifier"><code class="docutils literal notranslate"><span class="pre">PowerEntry.iconres_specifier</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.scheme_guid_ref"><code class="docutils literal notranslate"><span class="pre">PowerEntry.scheme_guid_ref</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.setting_guid_ref"><code class="docutils literal notranslate"><span class="pre">PowerEntry.setting_guid_ref</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.subgroup_guid_ref"><code class="docutils literal notranslate"><span class="pre">PowerEntry.subgroup_guid_ref</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_activescheme"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_activescheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_allpowerschemes"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_allpowerschemes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_maxpowersavings"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_maxpowersavings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_minpowersavings"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_minpowersavings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_personality"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_personality()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_typicalpowersavings"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_typicalpowersavings()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.BATTERY"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.BATTERY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.DISK"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.DISK</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.DISPLAY"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.DISPLAY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.NO"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.NO</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.PCIEXPRESS_SETTINGS"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.PCIEXPRESS_SETTINGS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.PROCESSOR_SETTINGS"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.PROCESSOR_SETTINGS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.SLEEP"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.SLEEP</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.SYSTEM_BUTTON"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.SYSTEM_BUTTON</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatform"><code class="docutils literal notranslate"><span class="pre">PowerPlatform</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatform.PLATFORM_ROLE_VERSION"><code class="docutils literal notranslate"><span class="pre">PowerPlatform.PLATFORM_ROLE_VERSION</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatform.get_platform_role_ex"><code class="docutils literal notranslate"><span class="pre">PowerPlatform.get_platform_role_ex()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.AppliancePC"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.AppliancePC</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Desktop"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Desktop</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.EnterpriseServer"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.EnterpriseServer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Maximum"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Maximum</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Mobile"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Mobile</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.PerformanceServer"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.PerformanceServer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.SOHOServer"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.SOHOServer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Slate"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Slate</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Unspecified"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Unspecified</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Workstation"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Workstation</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.create"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.create()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.descriptions"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.descriptions</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.friendly_name"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.friendly_name</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_description"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_description()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_friendly_name"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_friendly_name()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_value"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_value()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_value_size"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_value_size()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_value_type"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_value_type()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.is_index_valid"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.is_index_valid()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.is_range_defined"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.is_range_defined</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.iter_value_indexes"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.iter_value_indexes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.setting_guid"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.setting_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.subgroup_guid"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.subgroup_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.value_size0"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.value_size0</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.value_type0"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.value_type0</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.values"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.values</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.active_scheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme.active_scheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.can_restore_individual_default"><code class="docutils literal notranslate"><span class="pre">PowerScheme.can_restore_individual_default</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.delete_scheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme.delete_scheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.duplicate_scheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme.duplicate_scheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.enumerate"><code class="docutils literal notranslate"><span class="pre">PowerScheme.enumerate()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.import_scheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme.import_scheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.is_active"><code class="docutils literal notranslate"><span class="pre">PowerScheme.is_active()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.iter_settings"><code class="docutils literal notranslate"><span class="pre">PowerScheme.iter_settings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.iter_subgroups"><code class="docutils literal notranslate"><span class="pre">PowerScheme.iter_subgroups()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.nosubgroup"><code class="docutils literal notranslate"><span class="pre">PowerScheme.nosubgroup</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.scheme_guid"><code class="docutils literal notranslate"><span class="pre">PowerScheme.scheme_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.set_active"><code class="docutils literal notranslate"><span class="pre">PowerScheme.set_active()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.settings"><code class="docutils literal notranslate"><span class="pre">PowerScheme.settings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_battery"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_battery</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_disk"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_disk</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_display"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_display</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_pciexpress_settings"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_pciexpress_settings</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_processorsettings"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_processorsettings</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_sleep"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_sleep</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_sysbutton"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_sysbutton</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroups"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroups()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting"><code class="docutils literal notranslate"><span class="pre">PowerSetting</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.ac_value"><code class="docutils literal notranslate"><span class="pre">PowerSetting.ac_value</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.ac_value_index"><code class="docutils literal notranslate"><span class="pre">PowerSetting.ac_value_index</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.ac_value_size"><code class="docutils literal notranslate"><span class="pre">PowerSetting.ac_value_size</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.ac_value_type"><code class="docutils literal notranslate"><span class="pre">PowerSetting.ac_value_type</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.apply_changes"><code class="docutils literal notranslate"><span class="pre">PowerSetting.apply_changes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.as_possible_setting"><code class="docutils literal notranslate"><span class="pre">PowerSetting.as_possible_setting</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.create"><code class="docutils literal notranslate"><span class="pre">PowerSetting.create()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.dc_value"><code class="docutils literal notranslate"><span class="pre">PowerSetting.dc_value</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.dc_value_index"><code class="docutils literal notranslate"><span class="pre">PowerSetting.dc_value_index</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.dc_value_size"><code class="docutils literal notranslate"><span class="pre">PowerSetting.dc_value_size</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.dc_value_type"><code class="docutils literal notranslate"><span class="pre">PowerSetting.dc_value_type</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.scheme"><code class="docutils literal notranslate"><span class="pre">PowerSetting.scheme</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.scheme_guid"><code class="docutils literal notranslate"><span class="pre">PowerSetting.scheme_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.setting_guid"><code class="docutils literal notranslate"><span class="pre">PowerSetting.setting_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.subgroup"><code class="docutils literal notranslate"><span class="pre">PowerSetting.subgroup</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.subgroup_guid"><code class="docutils literal notranslate"><span class="pre">PowerSetting.subgroup_guid</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValue"><code class="docutils literal notranslate"><span class="pre">PowerSettingValue</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValue.raw"><code class="docutils literal notranslate"><span class="pre">PowerSettingValue.raw</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValue.type"><code class="docutils literal notranslate"><span class="pre">PowerSettingValue.type</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValue.value"><code class="docutils literal notranslate"><span class="pre">PowerSettingValue.value</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.BINARY"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.BINARY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.EXPAND_STR"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.EXPAND_STR</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.FULL_RESOURCE_DESCRIPTOR"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.FULL_RESOURCE_DESCRIPTOR</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.LINK"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.LINK</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.MULTI_STR"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.MULTI_STR</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.NONE"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.NONE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.RESOURCE_LIST"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.RESOURCE_LIST</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.RESOURCE_REQUIREMENTS_LIST"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.RESOURCE_REQUIREMENTS_LIST</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.STR"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.STR</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.UINT32_BE"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.UINT32_BE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.UINT32_LE"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.UINT32_LE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.UINT64_LE"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.UINT64_LE</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.iter_settings"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.iter_settings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.scheme"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.scheme</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.scheme_guid"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.scheme_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.settings"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.settings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.subgroup_guid"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.subgroup_guid</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-powpowerman">
+<span id="powpowerman-package"></span><h1>powpowerman package<a class="headerlink" href="#module-powpowerman" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerEntry">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerEntry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scheme_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subgroup_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setting_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#powpowerman.PowerEntry" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>電力情報の基本クラス。実際にはPowerScheme、PowerSubGroup、PowerSettingクラスを使用します。</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerEntry.description">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerEntry.description" title="Link to this definition">#</a></dt>
+<dd><p>電力スキーム、サブグループまたは設定の説明を取得します。エラー時は`None`を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerEntry.friendlyname">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">friendlyname</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerEntry.friendlyname" title="Link to this definition">#</a></dt>
+<dd><p>電力スキーム、サブグループまたは設定のフレンドリー名を取得します。エラー時は`None`を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerEntry.iconres_specifier">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">iconres_specifier</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerEntry.iconres_specifier" title="Link to this definition">#</a></dt>
+<dd><p>電力スキーム、サブグループまたは設定のアイコンリソースを取得します。エラー時は`None`を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerEntry.scheme_guid_ref">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">scheme_guid_ref</span></span><a class="headerlink" href="#powpowerman.PowerEntry.scheme_guid_ref" title="Link to this definition">#</a></dt>
+<dd><p>byref(scheme_guid)を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerEntry.setting_guid_ref">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">setting_guid_ref</span></span><a class="headerlink" href="#powpowerman.PowerEntry.setting_guid_ref" title="Link to this definition">#</a></dt>
+<dd><p>byref(setting_guid)を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerEntry.subgroup_guid_ref">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_guid_ref</span></span><a class="headerlink" href="#powpowerman.PowerEntry.subgroup_guid_ref" title="Link to this definition">#</a></dt>
+<dd><p>byref(subgroup_guid)を返します。</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSchemeFactory">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerKnownSchemeFactory</span></span><a class="headerlink" href="#powpowerman.PowerKnownSchemeFactory" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>既知の電力スキームを作成するファクトリクラスです。</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSchemeFactory.create_activescheme">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_activescheme</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a></span></span><a class="headerlink" href="#powpowerman.PowerKnownSchemeFactory.create_activescheme" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSchemeFactory.create_allpowerschemes">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_allpowerschemes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a></span></span><a class="headerlink" href="#powpowerman.PowerKnownSchemeFactory.create_allpowerschemes" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSchemeFactory.create_maxpowersavings">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_maxpowersavings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a></span></span><a class="headerlink" href="#powpowerman.PowerKnownSchemeFactory.create_maxpowersavings" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSchemeFactory.create_minpowersavings">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_minpowersavings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a></span></span><a class="headerlink" href="#powpowerman.PowerKnownSchemeFactory.create_minpowersavings" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSchemeFactory.create_personality">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_personality</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a></span></span><a class="headerlink" href="#powpowerman.PowerKnownSchemeFactory.create_personality" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSchemeFactory.create_typicalpowersavings">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_typicalpowersavings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a></span></span><a class="headerlink" href="#powpowerman.PowerKnownSchemeFactory.create_typicalpowersavings" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSubGroupGuid">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerKnownSubGroupGuid</span></span><a class="headerlink" href="#powpowerman.PowerKnownSubGroupGuid" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>電力の既知サブグループGUID。</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSubGroupGuid.BATTERY">
+<span class="sig-name descname"><span class="pre">BATTERY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Guid({e73a048d-bf27-4f12-9731-8b2076e8891f})</span></em><a class="headerlink" href="#powpowerman.PowerKnownSubGroupGuid.BATTERY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSubGroupGuid.DISK">
+<span class="sig-name descname"><span class="pre">DISK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Guid({0012ee47-9041-4b5d-9b77-535fba8b1442})</span></em><a class="headerlink" href="#powpowerman.PowerKnownSubGroupGuid.DISK" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSubGroupGuid.DISPLAY">
+<span class="sig-name descname"><span class="pre">DISPLAY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Guid({7516b95f-f776-4464-8c53-06167f40cc99})</span></em><a class="headerlink" href="#powpowerman.PowerKnownSubGroupGuid.DISPLAY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSubGroupGuid.NO">
+<span class="sig-name descname"><span class="pre">NO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Guid({fea3413e-7e05-4911-9a71-700331f1c294})</span></em><a class="headerlink" href="#powpowerman.PowerKnownSubGroupGuid.NO" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSubGroupGuid.PCIEXPRESS_SETTINGS">
+<span class="sig-name descname"><span class="pre">PCIEXPRESS_SETTINGS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Guid({501a4d13-42af-4429-9fd1-a8218c268e20})</span></em><a class="headerlink" href="#powpowerman.PowerKnownSubGroupGuid.PCIEXPRESS_SETTINGS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSubGroupGuid.PROCESSOR_SETTINGS">
+<span class="sig-name descname"><span class="pre">PROCESSOR_SETTINGS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Guid({54533251-82be-4824-96c1-47b60b740d00})</span></em><a class="headerlink" href="#powpowerman.PowerKnownSubGroupGuid.PROCESSOR_SETTINGS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSubGroupGuid.SLEEP">
+<span class="sig-name descname"><span class="pre">SLEEP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Guid({238c9fa8-0aad-41ed-83f4-97be242c8f20})</span></em><a class="headerlink" href="#powpowerman.PowerKnownSubGroupGuid.SLEEP" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerKnownSubGroupGuid.SYSTEM_BUTTON">
+<span class="sig-name descname"><span class="pre">SYSTEM_BUTTON</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Guid({4f971e89-eebd-4455-a8de-9e59040e7347})</span></em><a class="headerlink" href="#powpowerman.PowerKnownSubGroupGuid.SYSTEM_BUTTON" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatform">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerPlatform</span></span><a class="headerlink" href="#powpowerman.PowerPlatform" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatform.PLATFORM_ROLE_VERSION">
+<span class="sig-name descname"><span class="pre">PLATFORM_ROLE_VERSION</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Final</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#powpowerman.PowerPlatform.PLATFORM_ROLE_VERSION" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatform.get_platform_role_ex">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_platform_role_ex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerPlatformRole" title="powpowerman.PowerPlatformRole"><span class="pre">PowerPlatformRole</span></a></span></span><a class="headerlink" href="#powpowerman.PowerPlatform.get_platform_role_ex" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerPlatformRole</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#powpowerman.PowerPlatformRole" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
+<p>POWER_PLATFORM_ROLE</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.AppliancePC">
+<span class="sig-name descname"><span class="pre">AppliancePC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.AppliancePC" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.Desktop">
+<span class="sig-name descname"><span class="pre">Desktop</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.Desktop" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.EnterpriseServer">
+<span class="sig-name descname"><span class="pre">EnterpriseServer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.EnterpriseServer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.Maximum">
+<span class="sig-name descname"><span class="pre">Maximum</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.Maximum" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.Mobile">
+<span class="sig-name descname"><span class="pre">Mobile</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.Mobile" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.PerformanceServer">
+<span class="sig-name descname"><span class="pre">PerformanceServer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.PerformanceServer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.SOHOServer">
+<span class="sig-name descname"><span class="pre">SOHOServer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.SOHOServer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.Slate">
+<span class="sig-name descname"><span class="pre">Slate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.Slate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.Unspecified">
+<span class="sig-name descname"><span class="pre">Unspecified</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.Unspecified" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerPlatformRole.Workstation">
+<span class="sig-name descname"><span class="pre">Workstation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#powpowerman.PowerPlatformRole.Workstation" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerPossibleSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subgroup_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setting_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#powpowerman.PowerPossibleSetting" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>電力設定の取り得る値。</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.create">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subgroup_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">setting_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerPossibleSetting" title="powpowerman.PowerPossibleSetting"><span class="pre">PowerPossibleSetting</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#powpowerman.PowerPossibleSetting.create" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.descriptions">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">descriptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#powpowerman.PowerPossibleSetting.descriptions" title="Link to this definition">#</a></dt>
+<dd><p>値の説明を順番に返すイテレーターを取得します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.friendly_name">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">friendly_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#powpowerman.PowerPossibleSetting.friendly_name" title="Link to this definition">#</a></dt>
+<dd><p>値のフレンドリー名を順番に返すイテレーターを取得します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.get_description">
+<span class="sig-name descname"><span class="pre">get_description</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#powpowerman.PowerPossibleSetting.get_description" title="Link to this definition">#</a></dt>
+<dd><p>指定したインデックスの値の説明を取得します。エラー時は`None`です。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.get_friendly_name">
+<span class="sig-name descname"><span class="pre">get_friendly_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#powpowerman.PowerPossibleSetting.get_friendly_name" title="Link to this definition">#</a></dt>
+<dd><p>指定したインデックスの値のフレンドリー名を取得します。エラー時は`None`です。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.get_value">
+<span class="sig-name descname"><span class="pre">get_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerSettingValue" title="powpowerman.PowerSettingValue"><span class="pre">PowerSettingValue</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#powpowerman.PowerPossibleSetting.get_value" title="Link to this definition">#</a></dt>
+<dd><p>指定したインデックスの値を取得します。エラー時は`None`です。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.get_value_size">
+<span class="sig-name descname"><span class="pre">get_value_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerSettingValueType" title="powpowerman.PowerSettingValueType"><span class="pre">PowerSettingValueType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#powpowerman.PowerPossibleSetting.get_value_size" title="Link to this definition">#</a></dt>
+<dd><p>指定したインデックスの値のバイト数を取得します。エラー時は`None`です。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.get_value_type">
+<span class="sig-name descname"><span class="pre">get_value_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerSettingValueType" title="powpowerman.PowerSettingValueType"><span class="pre">PowerSettingValueType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#powpowerman.PowerPossibleSetting.get_value_type" title="Link to this definition">#</a></dt>
+<dd><p>指定したインデックスの値の型を取得します。エラー時は`None`です。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.is_index_valid">
+<span class="sig-name descname"><span class="pre">is_index_valid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#powpowerman.PowerPossibleSetting.is_index_valid" title="Link to this definition">#</a></dt>
+<dd><p>インデックスが有効な範囲内であれば真を返します。
+電源設定が範囲ではない場合、0の場合のみ真です。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.is_range_defined">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_range_defined</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#powpowerman.PowerPossibleSetting.is_range_defined" title="Link to this definition">#</a></dt>
+<dd><p>電源設定が範囲として定義されていれば真を返します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.iter_value_indexes">
+<span class="sig-name descname"><span class="pre">iter_value_indexes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#powpowerman.PowerPossibleSetting.iter_value_indexes" title="Link to this definition">#</a></dt>
+<dd><p>有効なインデックスのイテレーターを返します。範囲以外の場合は常に0です。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.setting_guid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">setting_guid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></em><a class="headerlink" href="#powpowerman.PowerPossibleSetting.setting_guid" title="Link to this definition">#</a></dt>
+<dd><p>電源設定のGUIDを取得します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.subgroup_guid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_guid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></em><a class="headerlink" href="#powpowerman.PowerPossibleSetting.subgroup_guid" title="Link to this definition">#</a></dt>
+<dd><p>電源サブグループのGUIDを取得します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.value_size0">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">value_size0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerPossibleSetting.value_size0" title="Link to this definition">#</a></dt>
+<dd><p>0番目の値のバイト数を取得します。エラー時は`None`です。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.value_type0">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">value_type0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSettingValueType" title="powpowerman.PowerSettingValueType"><span class="pre">PowerSettingValueType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerPossibleSetting.value_type0" title="Link to this definition">#</a></dt>
+<dd><p>0番目の値の型を取得します。エラー時は`None`です。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerPossibleSetting.values">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">values</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#powpowerman.PowerSettingValue" title="powpowerman.PowerSettingValue"><span class="pre">PowerSettingValue</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#powpowerman.PowerPossibleSetting.values" title="Link to this definition">#</a></dt>
+<dd><p>値の取り得る値を順番に返すイテレーターを取得します。</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerScheme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scheme_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#powpowerman.PowerScheme" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#powpowerman.PowerEntry" title="powpowerman.PowerEntry"><code class="xref py py-class docutils literal notranslate"><span class="pre">PowerEntry</span></code></a></p>
+<p>電力スキーム。</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.active_scheme">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">active_scheme</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a></span></span><a class="headerlink" href="#powpowerman.PowerScheme.active_scheme" title="Link to this definition">#</a></dt>
+<dd><p>アクティブな電力スキームを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.can_restore_individual_default">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">can_restore_individual_default</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#powpowerman.PowerScheme.can_restore_individual_default" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.delete_scheme">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">delete_scheme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scheme_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#powpowerman.PowerScheme.delete_scheme" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.duplicate_scheme">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">duplicate_scheme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scheme_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_scheme_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#powpowerman.PowerScheme.duplicate_scheme" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.enumerate">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enumerate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#powpowerman.PowerScheme.enumerate" title="Link to this definition">#</a></dt>
+<dd><p>電力スキームのイテレーターを返します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.import_scheme">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">import_scheme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">import_filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_scheme_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#powpowerman.PowerScheme.import_scheme" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.is_active">
+<span class="sig-name descname"><span class="pre">is_active</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#powpowerman.PowerScheme.is_active" title="Link to this definition">#</a></dt>
+<dd><p>電力スキームが現在アクティブであればTrueを返します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.iter_settings">
+<span class="sig-name descname"><span class="pre">iter_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#powpowerman.PowerSetting" title="powpowerman.PowerSetting"><span class="pre">PowerSetting</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#powpowerman.PowerScheme.iter_settings" title="Link to this definition">#</a></dt>
+<dd><p>電力スキームに直接所属する電力設定のイテレーターを返します。</p>
+<p>次の操作と同じです。
+&gt;&gt;&gt; power_scheme.nosubgroup.iter_settings()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.iter_subgroups">
+<span class="sig-name descname"><span class="pre">iter_subgroups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#powpowerman.PowerScheme.iter_subgroups" title="Link to this definition">#</a></dt>
+<dd><p>電力スキームに所属する電力サブグループのイテレーターを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.nosubgroup">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nosubgroup</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></em><a class="headerlink" href="#powpowerman.PowerScheme.nosubgroup" title="Link to this definition">#</a></dt>
+<dd><p>電力スキーム直下の電力設定を保持する電力サブグループを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.scheme_guid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">scheme_guid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></em><a class="headerlink" href="#powpowerman.PowerScheme.scheme_guid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.set_active">
+<span class="sig-name descname"><span class="pre">set_active</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#powpowerman.PowerScheme.set_active" title="Link to this definition">#</a></dt>
+<dd><p>電力スキームをアクティブに設定して、成否を返します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.settings">
+<span class="sig-name descname"><span class="pre">settings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subgroup_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">setting_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerSetting" title="powpowerman.PowerSetting"><span class="pre">PowerSetting</span></a></span></span><a class="headerlink" href="#powpowerman.PowerScheme.settings" title="Link to this definition">#</a></dt>
+<dd><p>電力サブグループと電力設定のGUIDをそれぞれ指定して電力設定を取得します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.subgroup_battery">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_battery</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></em><a class="headerlink" href="#powpowerman.PowerScheme.subgroup_battery" title="Link to this definition">#</a></dt>
+<dd><p>バッテリーを表す電力サブグループを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.subgroup_disk">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_disk</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></em><a class="headerlink" href="#powpowerman.PowerScheme.subgroup_disk" title="Link to this definition">#</a></dt>
+<dd><p>ディスクを表す電力サブグループを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.subgroup_display">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_display</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></em><a class="headerlink" href="#powpowerman.PowerScheme.subgroup_display" title="Link to this definition">#</a></dt>
+<dd><p>画面やビデオを表す電力サブグループを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.subgroup_pciexpress_settings">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_pciexpress_settings</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></em><a class="headerlink" href="#powpowerman.PowerScheme.subgroup_pciexpress_settings" title="Link to this definition">#</a></dt>
+<dd><p>PCI EXPRESSを表す電力サブグループを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.subgroup_processorsettings">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_processorsettings</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></em><a class="headerlink" href="#powpowerman.PowerScheme.subgroup_processorsettings" title="Link to this definition">#</a></dt>
+<dd><p>プロセッサー設定を表す電力サブグループを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.subgroup_sleep">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_sleep</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></em><a class="headerlink" href="#powpowerman.PowerScheme.subgroup_sleep" title="Link to this definition">#</a></dt>
+<dd><p>スリープ設定を表す電力サブグループを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.subgroup_sysbutton">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_sysbutton</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></em><a class="headerlink" href="#powpowerman.PowerScheme.subgroup_sysbutton" title="Link to this definition">#</a></dt>
+<dd><p>システムボタンを表す電力サブグループを返します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerScheme.subgroups">
+<span class="sig-name descname"><span class="pre">subgroups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subgroup_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></span></span><a class="headerlink" href="#powpowerman.PowerScheme.subgroups" title="Link to this definition">#</a></dt>
+<dd><p>GUIDを指定して電力サブグループを取得します。</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scheme_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subgroup_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">setting_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#powpowerman.PowerSetting" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#powpowerman.PowerEntry" title="powpowerman.PowerEntry"><code class="xref py py-class docutils literal notranslate"><span class="pre">PowerEntry</span></code></a></p>
+<p>電力設定。</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.ac_value">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ac_value</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSettingValue" title="powpowerman.PowerSettingValue"><span class="pre">PowerSettingValue</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerSetting.ac_value" title="Link to this definition">#</a></dt>
+<dd><p>交流電源時（コンセント接続時）の値を取得します。エラー時は`None`を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.ac_value_index">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ac_value_index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerSetting.ac_value_index" title="Link to this definition">#</a></dt>
+<dd><p>交流電源時（コンセント接続時）の値インデックスを取得または設定します。エラー時は`None`を返します。</p>
+<p>設定される値はvalue_typeやPowerPossibleSettingを確認してください。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.ac_value_size">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ac_value_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSettingValueType" title="powpowerman.PowerSettingValueType"><span class="pre">PowerSettingValueType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerSetting.ac_value_size" title="Link to this definition">#</a></dt>
+<dd><p>交流電源時（コンセント接続時）の値のバイト数を取得します。エラー時は`None`を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.ac_value_type">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ac_value_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSettingValueType" title="powpowerman.PowerSettingValueType"><span class="pre">PowerSettingValueType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerSetting.ac_value_type" title="Link to this definition">#</a></dt>
+<dd><p>交流電源時（コンセント接続時）の値の型を取得します。エラー時は`None`を返します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.apply_changes">
+<span class="sig-name descname"><span class="pre">apply_changes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#powpowerman.PowerSetting.apply_changes" title="Link to this definition">#</a></dt>
+<dd><p>スキームがアクティブな場合に変更を反映します。成否を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.as_possible_setting">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">as_possible_setting</span></span><a class="headerlink" href="#powpowerman.PowerSetting.as_possible_setting" title="Link to this definition">#</a></dt>
+<dd><p>設定の取り得る値を取得します。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.create">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subgroup_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">setting_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerSetting" title="powpowerman.PowerSetting"><span class="pre">PowerSetting</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#powpowerman.PowerSetting.create" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.dc_value">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dc_value</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSettingValue" title="powpowerman.PowerSettingValue"><span class="pre">PowerSettingValue</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerSetting.dc_value" title="Link to this definition">#</a></dt>
+<dd><p>直流電源時（バッテリー稼働時）の値を取得します。エラー時は`None`を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.dc_value_index">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dc_value_index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerSetting.dc_value_index" title="Link to this definition">#</a></dt>
+<dd><p>直流電源時（バッテリー稼働時）の値インデックスを取得または設定します。エラー時は`None`を返します。</p>
+<p>設定される値はvalue_typeやPowerPossibleSettingを確認してください。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.dc_value_size">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dc_value_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSettingValueType" title="powpowerman.PowerSettingValueType"><span class="pre">PowerSettingValueType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerSetting.dc_value_size" title="Link to this definition">#</a></dt>
+<dd><p>直流電源時（バッテリー稼働時）の値のバイト数を取得します。エラー時は`None`を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.dc_value_type">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dc_value_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSettingValueType" title="powpowerman.PowerSettingValueType"><span class="pre">PowerSettingValueType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerSetting.dc_value_type" title="Link to this definition">#</a></dt>
+<dd><p>直流電源時（バッテリー稼働時）の値の型を取得します。エラー時は`None`を返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.scheme">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">scheme</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#powpowerman.PowerSetting.scheme" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.scheme_guid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">scheme_guid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></em><a class="headerlink" href="#powpowerman.PowerSetting.scheme_guid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.setting_guid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">setting_guid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></em><a class="headerlink" href="#powpowerman.PowerSetting.setting_guid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.subgroup">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSubGroup" title="powpowerman.PowerSubGroup"><span class="pre">PowerSubGroup</span></a></em><a class="headerlink" href="#powpowerman.PowerSetting.subgroup" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSetting.subgroup_guid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_guid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></em><a class="headerlink" href="#powpowerman.PowerSetting.subgroup_guid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValue">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerSettingValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#powpowerman.PowerSettingValueType" title="powpowerman.PowerSettingValueType"><span class="pre">PowerSettingValueType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#powpowerman.PowerSettingValue" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>電力設定の値。イミュータブルです。</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValue.raw">
+<span class="sig-name descname"><span class="pre">raw</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bytes</span></em><a class="headerlink" href="#powpowerman.PowerSettingValue.raw" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValue.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerSettingValueType" title="powpowerman.PowerSettingValueType"><span class="pre">PowerSettingValueType</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#powpowerman.PowerSettingValue.type" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValue.value">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">value</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">object</span></em><a class="headerlink" href="#powpowerman.PowerSettingValue.value" title="Link to this definition">#</a></dt>
+<dd><p>型に対応する値。</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerSettingValueType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#powpowerman.PowerSettingValueType" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
+<p>電力設定の値型。</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.BINARY">
+<span class="sig-name descname"><span class="pre">BINARY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.BINARY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.EXPAND_STR">
+<span class="sig-name descname"><span class="pre">EXPAND_STR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.EXPAND_STR" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.FULL_RESOURCE_DESCRIPTOR">
+<span class="sig-name descname"><span class="pre">FULL_RESOURCE_DESCRIPTOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.FULL_RESOURCE_DESCRIPTOR" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.LINK">
+<span class="sig-name descname"><span class="pre">LINK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.LINK" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.MULTI_STR">
+<span class="sig-name descname"><span class="pre">MULTI_STR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.MULTI_STR" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.NONE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.RESOURCE_LIST">
+<span class="sig-name descname"><span class="pre">RESOURCE_LIST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.RESOURCE_LIST" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.RESOURCE_REQUIREMENTS_LIST">
+<span class="sig-name descname"><span class="pre">RESOURCE_REQUIREMENTS_LIST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.RESOURCE_REQUIREMENTS_LIST" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.STR">
+<span class="sig-name descname"><span class="pre">STR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.STR" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.UINT32_BE">
+<span class="sig-name descname"><span class="pre">UINT32_BE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.UINT32_BE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.UINT32_LE">
+<span class="sig-name descname"><span class="pre">UINT32_LE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.UINT32_LE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="powpowerman.PowerSettingValueType.UINT64_LE">
+<span class="sig-name descname"><span class="pre">UINT64_LE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#powpowerman.PowerSettingValueType.UINT64_LE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="powpowerman.PowerSubGroup">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">powpowerman.</span></span><span class="sig-name descname"><span class="pre">PowerSubGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scheme_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">subgroup_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#powpowerman.PowerSubGroup" title="Link to this definition">#</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#powpowerman.PowerEntry" title="powpowerman.PowerEntry"><code class="xref py py-class docutils literal notranslate"><span class="pre">PowerEntry</span></code></a></p>
+<p>電力サブグループ。</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerSubGroup.iter_settings">
+<span class="sig-name descname"><span class="pre">iter_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#powpowerman.PowerSetting" title="powpowerman.PowerSetting"><span class="pre">PowerSetting</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#powpowerman.PowerSubGroup.iter_settings" title="Link to this definition">#</a></dt>
+<dd><p>電力サブグループに所属する電力設定のイテレーターを返します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSubGroup.scheme">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">scheme</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#powpowerman.PowerScheme" title="powpowerman.PowerScheme"><span class="pre">PowerScheme</span></a></em><a class="headerlink" href="#powpowerman.PowerSubGroup.scheme" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSubGroup.scheme_guid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">scheme_guid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></em><a class="headerlink" href="#powpowerman.PowerSubGroup.scheme_guid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="powpowerman.PowerSubGroup.settings">
+<span class="sig-name descname"><span class="pre">settings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting_guid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#powpowerman.PowerSetting" title="powpowerman.PowerSetting"><span class="pre">PowerSetting</span></a></span></span><a class="headerlink" href="#powpowerman.PowerSubGroup.settings" title="Link to this definition">#</a></dt>
+<dd><p>GUIDを指定して電力設定を取得します。</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="powpowerman.PowerSubGroup.subgroup_guid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subgroup_guid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="powguid.html#powguid.Guid" title="powguid.Guid"><span class="pre">Guid</span></a></em><a class="headerlink" href="#powpowerman.PowerSubGroup.subgroup_guid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="powpowerman.knownguid.html">powpowerman.knownguid module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.adaptivepowerbehavior_input_controller_state"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.adaptivepowerbehavior_input_controller_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.adaptivepowerbehavior_non_adaptive_input_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.adaptivepowerbehavior_non_adaptive_input_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_adaptive_powerdown"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.disk_adaptive_powerdown()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_burst_ignore_threshold"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.disk_burst_ignore_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_idle_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.disk_idle_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_max_power"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.disk_max_power()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_nvme_noppme"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.disk_nvme_noppme()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_powerdown_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.disk_powerdown_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_deep_sleep_enabled"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.idleresidency_deep_sleep_enabled()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_disk_coalescing_powerdown_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.idleresidency_disk_coalescing_powerdown_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_execution_required_request_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.idleresidency_execution_required_request_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_allow_awaymode"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_allow_awaymode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_critical_power_transition"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_critical_power_transition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_hibernate_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_hibernate_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_idle_threshold"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_idle_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_budget_grace_period"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_standby_budget_grace_period()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_budget_percent"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_standby_budget_percent()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_standby_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_system_awaymode"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_system_awaymode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_unattend_sleep_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_unattend_sleep_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_user_presence_prediction"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.sleep_user_presence_prediction()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_display_brightness"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_adaptive_display_brightness()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_percent_increase"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_adaptive_percent_increase()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_powerdown"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_adaptive_powerdown()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_advanced_color_quality_bits"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_advanced_color_quality_bits()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_allow_display_required"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_allow_display_required()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_annoyance_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_annoyance_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_console_display_state"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_console_display_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_console_lock_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_console_lock_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_current_monitor_beightness"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_current_monitor_beightness()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_devicepowerpolicy_brightness"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_devicepowerpolicy_brightness()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_devicepowerpolicy_dim_brightness"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_devicepowerpolicy_dim_brightness()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_dim_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_dim_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_hibernate_fasts4_policy"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_hibernate_fasts4_policy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_monitor_power_on"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_monitor_power_on()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_powerdown_timeout"><code class="docutils literal notranslate"><span class="pre">PowerKnownSettingGuid.video_powerdown_timeout()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.adaptivepowerbehavior"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.adaptivepowerbehavior()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.battery"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.battery()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.disk"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.disk()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.energysaver"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.energysaver()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.graphics"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.graphics()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.idleresiliency"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.idleresiliency()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.intsteer"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.intsteer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.pciexpress"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.pciexpress()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.processor"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.processor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.sleep"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.sleep()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.system_button"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.system_button()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.video"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubgroupGuid.video()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids"><code class="docutils literal notranslate"><span class="pre">PowerModeGuids</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids.best_efficiency"><code class="docutils literal notranslate"><span class="pre">PowerModeGuids.best_efficiency()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids.best_performance"><code class="docutils literal notranslate"><span class="pre">PowerModeGuids.best_performance()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids.none"><code class="docutils literal notranslate"><span class="pre">PowerModeGuids.none()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids.performance"><code class="docutils literal notranslate"><span class="pre">PowerModeGuids.performance()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="powguid.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">前へ</p>
+        <p class="prev-next-title">powguid package</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="powpowerman.knownguid.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">次へ</p>
+        <p class="prev-next-title">powpowerman.knownguid module</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目次
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry"><code class="docutils literal notranslate"><span class="pre">PowerEntry</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.description"><code class="docutils literal notranslate"><span class="pre">PowerEntry.description</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.friendlyname"><code class="docutils literal notranslate"><span class="pre">PowerEntry.friendlyname</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.iconres_specifier"><code class="docutils literal notranslate"><span class="pre">PowerEntry.iconres_specifier</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.scheme_guid_ref"><code class="docutils literal notranslate"><span class="pre">PowerEntry.scheme_guid_ref</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.setting_guid_ref"><code class="docutils literal notranslate"><span class="pre">PowerEntry.setting_guid_ref</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerEntry.subgroup_guid_ref"><code class="docutils literal notranslate"><span class="pre">PowerEntry.subgroup_guid_ref</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_activescheme"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_activescheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_allpowerschemes"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_allpowerschemes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_maxpowersavings"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_maxpowersavings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_minpowersavings"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_minpowersavings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_personality"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_personality()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSchemeFactory.create_typicalpowersavings"><code class="docutils literal notranslate"><span class="pre">PowerKnownSchemeFactory.create_typicalpowersavings()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.BATTERY"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.BATTERY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.DISK"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.DISK</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.DISPLAY"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.DISPLAY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.NO"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.NO</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.PCIEXPRESS_SETTINGS"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.PCIEXPRESS_SETTINGS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.PROCESSOR_SETTINGS"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.PROCESSOR_SETTINGS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.SLEEP"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.SLEEP</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerKnownSubGroupGuid.SYSTEM_BUTTON"><code class="docutils literal notranslate"><span class="pre">PowerKnownSubGroupGuid.SYSTEM_BUTTON</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatform"><code class="docutils literal notranslate"><span class="pre">PowerPlatform</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatform.PLATFORM_ROLE_VERSION"><code class="docutils literal notranslate"><span class="pre">PowerPlatform.PLATFORM_ROLE_VERSION</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatform.get_platform_role_ex"><code class="docutils literal notranslate"><span class="pre">PowerPlatform.get_platform_role_ex()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.AppliancePC"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.AppliancePC</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Desktop"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Desktop</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.EnterpriseServer"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.EnterpriseServer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Maximum"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Maximum</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Mobile"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Mobile</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.PerformanceServer"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.PerformanceServer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.SOHOServer"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.SOHOServer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Slate"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Slate</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Unspecified"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Unspecified</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPlatformRole.Workstation"><code class="docutils literal notranslate"><span class="pre">PowerPlatformRole.Workstation</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.create"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.create()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.descriptions"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.descriptions</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.friendly_name"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.friendly_name</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_description"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_description()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_friendly_name"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_friendly_name()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_value"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_value()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_value_size"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_value_size()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.get_value_type"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.get_value_type()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.is_index_valid"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.is_index_valid()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.is_range_defined"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.is_range_defined</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.iter_value_indexes"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.iter_value_indexes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.setting_guid"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.setting_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.subgroup_guid"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.subgroup_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.value_size0"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.value_size0</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.value_type0"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.value_type0</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerPossibleSetting.values"><code class="docutils literal notranslate"><span class="pre">PowerPossibleSetting.values</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.active_scheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme.active_scheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.can_restore_individual_default"><code class="docutils literal notranslate"><span class="pre">PowerScheme.can_restore_individual_default</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.delete_scheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme.delete_scheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.duplicate_scheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme.duplicate_scheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.enumerate"><code class="docutils literal notranslate"><span class="pre">PowerScheme.enumerate()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.import_scheme"><code class="docutils literal notranslate"><span class="pre">PowerScheme.import_scheme()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.is_active"><code class="docutils literal notranslate"><span class="pre">PowerScheme.is_active()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.iter_settings"><code class="docutils literal notranslate"><span class="pre">PowerScheme.iter_settings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.iter_subgroups"><code class="docutils literal notranslate"><span class="pre">PowerScheme.iter_subgroups()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.nosubgroup"><code class="docutils literal notranslate"><span class="pre">PowerScheme.nosubgroup</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.scheme_guid"><code class="docutils literal notranslate"><span class="pre">PowerScheme.scheme_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.set_active"><code class="docutils literal notranslate"><span class="pre">PowerScheme.set_active()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.settings"><code class="docutils literal notranslate"><span class="pre">PowerScheme.settings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_battery"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_battery</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_disk"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_disk</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_display"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_display</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_pciexpress_settings"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_pciexpress_settings</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_processorsettings"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_processorsettings</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_sleep"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_sleep</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroup_sysbutton"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroup_sysbutton</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerScheme.subgroups"><code class="docutils literal notranslate"><span class="pre">PowerScheme.subgroups()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting"><code class="docutils literal notranslate"><span class="pre">PowerSetting</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.ac_value"><code class="docutils literal notranslate"><span class="pre">PowerSetting.ac_value</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.ac_value_index"><code class="docutils literal notranslate"><span class="pre">PowerSetting.ac_value_index</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.ac_value_size"><code class="docutils literal notranslate"><span class="pre">PowerSetting.ac_value_size</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.ac_value_type"><code class="docutils literal notranslate"><span class="pre">PowerSetting.ac_value_type</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.apply_changes"><code class="docutils literal notranslate"><span class="pre">PowerSetting.apply_changes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.as_possible_setting"><code class="docutils literal notranslate"><span class="pre">PowerSetting.as_possible_setting</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.create"><code class="docutils literal notranslate"><span class="pre">PowerSetting.create()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.dc_value"><code class="docutils literal notranslate"><span class="pre">PowerSetting.dc_value</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.dc_value_index"><code class="docutils literal notranslate"><span class="pre">PowerSetting.dc_value_index</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.dc_value_size"><code class="docutils literal notranslate"><span class="pre">PowerSetting.dc_value_size</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.dc_value_type"><code class="docutils literal notranslate"><span class="pre">PowerSetting.dc_value_type</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.scheme"><code class="docutils literal notranslate"><span class="pre">PowerSetting.scheme</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.scheme_guid"><code class="docutils literal notranslate"><span class="pre">PowerSetting.scheme_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.setting_guid"><code class="docutils literal notranslate"><span class="pre">PowerSetting.setting_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.subgroup"><code class="docutils literal notranslate"><span class="pre">PowerSetting.subgroup</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSetting.subgroup_guid"><code class="docutils literal notranslate"><span class="pre">PowerSetting.subgroup_guid</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValue"><code class="docutils literal notranslate"><span class="pre">PowerSettingValue</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValue.raw"><code class="docutils literal notranslate"><span class="pre">PowerSettingValue.raw</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValue.type"><code class="docutils literal notranslate"><span class="pre">PowerSettingValue.type</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValue.value"><code class="docutils literal notranslate"><span class="pre">PowerSettingValue.value</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.BINARY"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.BINARY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.EXPAND_STR"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.EXPAND_STR</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.FULL_RESOURCE_DESCRIPTOR"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.FULL_RESOURCE_DESCRIPTOR</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.LINK"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.LINK</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.MULTI_STR"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.MULTI_STR</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.NONE"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.NONE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.RESOURCE_LIST"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.RESOURCE_LIST</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.RESOURCE_REQUIREMENTS_LIST"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.RESOURCE_REQUIREMENTS_LIST</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.STR"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.STR</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.UINT32_BE"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.UINT32_BE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.UINT32_LE"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.UINT32_LE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSettingValueType.UINT64_LE"><code class="docutils literal notranslate"><span class="pre">PowerSettingValueType.UINT64_LE</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.iter_settings"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.iter_settings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.scheme"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.scheme</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.scheme_guid"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.scheme_guid</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.settings"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.settings()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#powpowerman.PowerSubGroup.subgroup_guid"><code class="docutils literal notranslate"><span class="pre">PowerSubGroup.subgroup_guid</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+著者 poti-san
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, poti-san.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

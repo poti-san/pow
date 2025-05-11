@@ -1,0 +1,772 @@
+
+<!DOCTYPE html>
+
+
+<html lang="ja" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>powdeviceinfo package &#8212; pow  ドキュメント</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=1cf7f4d9"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/translations.js?v=4755f45a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'apiref/powdeviceinfo';</script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="powdeviceinfo.cfgmgr package" href="powdeviceinfo.cfgmgr.html" />
+    <link rel="prev" title="powpowerman.knownguid module" href="powpowerman.knownguid.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="ja"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">pow  ドキュメント</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">検索</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../package_summary/index.html">パッケージの概要</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../package_summary/powsid.html">powsidパッケージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../package_summary/powguid.html">powguidパッケージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../package_summary/powpowerman.html">powpowermanパッケージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../package_summary/powdeviceinfo.html">powdeviceinfoパッケージ</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../apiref.html">APIドキュメント</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="powsid.html">powsid package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="powguid.html">powguid package</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="powpowerman.html">powpowerman package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="powpowerman.knownguid.html">powpowerman.knownguid module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">powdeviceinfo package</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="powdeviceinfo.cfgmgr.html">powdeviceinfo.cfgmgr package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="powdeviceinfo.cfgmgr.crresult.html">powdeviceinfo.cfgmgr.crresult module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html">powdeviceinfo.devprop module</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">索引</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">モジュール索引</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全画面モード"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>powdeviceinfo package</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目次 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subpackages">Subpackages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-powdeviceinfo">
+<span id="powdeviceinfo-package"></span><h1>powdeviceinfo package<a class="headerlink" href="#module-powdeviceinfo" title="Link to this heading">#</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="powdeviceinfo.cfgmgr.html">powdeviceinfo.cfgmgr package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass"><code class="docutils literal notranslate"><span class="pre">CMClass</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.classenumflags"><code class="docutils literal notranslate"><span class="pre">CMClass.classenumflags()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.classpropflags"><code class="docutils literal notranslate"><span class="pre">CMClass.classpropflags()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.get_prop"><code class="docutils literal notranslate"><span class="pre">CMClass.get_prop()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.get_prop_or_none"><code class="docutils literal notranslate"><span class="pre">CMClass.get_prop_or_none()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.guid"><code class="docutils literal notranslate"><span class="pre">CMClass.guid</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.instanceid_or_none"><code class="docutils literal notranslate"><span class="pre">CMClass.instanceid_or_none</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.iter"><code class="docutils literal notranslate"><span class="pre">CMClass.iter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.name_or_none"><code class="docutils literal notranslate"><span class="pre">CMClass.name_or_none</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.propkeycount"><code class="docutils literal notranslate"><span class="pre">CMClass.propkeycount</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.propkeys"><code class="docutils literal notranslate"><span class="pre">CMClass.propkeys</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.props"><code class="docutils literal notranslate"><span class="pre">CMClass.props</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice"><code class="docutils literal notranslate"><span class="pre">CMDevice</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.description_or_none"><code class="docutils literal notranslate"><span class="pre">CMDevice.description_or_none</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.devinst"><code class="docutils literal notranslate"><span class="pre">CMDevice.devinst</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.get_prop"><code class="docutils literal notranslate"><span class="pre">CMDevice.get_prop()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.get_prop_or_none"><code class="docutils literal notranslate"><span class="pre">CMDevice.get_prop_or_none()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.instanceid_or_none"><code class="docutils literal notranslate"><span class="pre">CMDevice.instanceid_or_none</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_all"><code class="docutils literal notranslate"><span class="pre">CMDevice.iter_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_class"><code class="docutils literal notranslate"><span class="pre">CMDevice.iter_deviceid_by_class()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_classguid"><code class="docutils literal notranslate"><span class="pre">CMDevice.iter_deviceid_by_classguid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_classid"><code class="docutils literal notranslate"><span class="pre">CMDevice.iter_deviceid_by_classid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_classname"><code class="docutils literal notranslate"><span class="pre">CMDevice.iter_deviceid_by_classname()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_enumerator"><code class="docutils literal notranslate"><span class="pre">CMDevice.iter_deviceid_by_enumerator()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.name_or_none"><code class="docutils literal notranslate"><span class="pre">CMDevice.name_or_none</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.propdict"><code class="docutils literal notranslate"><span class="pre">CMDevice.propdict</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.propkeys"><code class="docutils literal notranslate"><span class="pre">CMDevice.propkeys</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.propkeyscount"><code class="docutils literal notranslate"><span class="pre">CMDevice.propkeyscount</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.props"><code class="docutils literal notranslate"><span class="pre">CMDevice.props</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.props_iter"><code class="docutils literal notranslate"><span class="pre">CMDevice.props_iter</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDeviceID"><code class="docutils literal notranslate"><span class="pre">CMDeviceID</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDeviceID.iter_all"><code class="docutils literal notranslate"><span class="pre">CMDeviceID.iter_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDeviceID.iter_by_class"><code class="docutils literal notranslate"><span class="pre">CMDeviceID.iter_by_class()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDeviceID.iter_by_enumerator"><code class="docutils literal notranslate"><span class="pre">CMDeviceID.iter_by_enumerator()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMEnumerator"><code class="docutils literal notranslate"><span class="pre">CMEnumerator</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMEnumerator.iter"><code class="docutils literal notranslate"><span class="pre">CMEnumerator.iter()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMError"><code class="docutils literal notranslate"><span class="pre">CMError</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMError.cr"><code class="docutils literal notranslate"><span class="pre">CMError.cr</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMError.throw_if_failed"><code class="docutils literal notranslate"><span class="pre">CMError.throw_if_failed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMError.throw_ifnot_buffersmall"><code class="docutils literal notranslate"><span class="pre">CMError.throw_ifnot_buffersmall()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMInterfaceClass"><code class="docutils literal notranslate"><span class="pre">CMInterfaceClass</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMInterfaceClass.classenumflags"><code class="docutils literal notranslate"><span class="pre">CMInterfaceClass.classenumflags()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMInterfaceClass.classpropflags"><code class="docutils literal notranslate"><span class="pre">CMInterfaceClass.classpropflags()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag"><code class="docutils literal notranslate"><span class="pre">CMLocateFlag</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag.CANCEL_REMOVE"><code class="docutils literal notranslate"><span class="pre">CMLocateFlag.CANCEL_REMOVE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag.NORMAL"><code class="docutils literal notranslate"><span class="pre">CMLocateFlag.NORMAL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag.NO_VALIDATION"><code class="docutils literal notranslate"><span class="pre">CMLocateFlag.NO_VALIDATION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag.PHANTOM"><code class="docutils literal notranslate"><span class="pre">CMLocateFlag.PHANTOM</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass"><code class="docutils literal notranslate"><span class="pre">CMSetupClass</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass.classenumflags"><code class="docutils literal notranslate"><span class="pre">CMSetupClass.classenumflags()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass.classname_or_none"><code class="docutils literal notranslate"><span class="pre">CMSetupClass.classname_or_none</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass.classpropflags"><code class="docutils literal notranslate"><span class="pre">CMSetupClass.classpropflags()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass.find_by_classname"><code class="docutils literal notranslate"><span class="pre">CMSetupClass.find_by_classname()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.cfgmgr.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.cfgmgr.crresult.html">powdeviceinfo.cfgmgr.crresult module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="powdeviceinfo.devprop.html">powdeviceinfo.devprop module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.CHARACTERISTICS"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.CHARACTERISTICS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.CLASS_CO_INSTALLERS"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.CLASS_CO_INSTALLERS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.CLASS_INSTALLER"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.CLASS_INSTALLER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.CLASS_NAME"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.CLASS_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.DEFAULT_SERVICE"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.DEFAULT_SERVICE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.DEV_TYPE"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.DEV_TYPE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.DHP_REBALANCE_OPT_OUT"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.DHP_REBALANCE_OPT_OUT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.EXCLUSIVE"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.EXCLUSIVE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.ICON"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.ICON</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.ICON_PATH"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.ICON_PATH</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.LOWER_FILTERS"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.LOWER_FILTERS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.NAME"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.NO_DISPLAY_CLASS"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.NO_DISPLAY_CLASS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.NO_INSTALL_CLASS"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.NO_INSTALL_CLASS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.NO_USE_CLASS"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.NO_USE_CLASS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.PROP_PAGE_PROVIDER"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.PROP_PAGE_PROVIDER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.SECURITY"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.SECURITY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.SECURITY_SDS"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.SECURITY_SDS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.SILENT_INSTALL"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.SILENT_INSTALL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.UPPER_FILTERS"><code class="docutils literal notranslate"><span class="pre">DeviceClassPropertyKeys.UPPER_FILTERS</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.ADDRESS"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.ADDRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.ALWAYS_SHOW_DEVICE_AS_CONNECTED"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.ALWAYS_SHOW_DEVICE_AS_CONNECTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.ASSOCIATION_ARRAY"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.ASSOCIATION_ARRAY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.BASELINE_EXPERIENCE_ID"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.BASELINE_EXPERIENCE_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.CATEGORY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_DESC_PLURAL"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.CATEGORY_DESC_PLURAL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_DESC_SINGULAR"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.CATEGORY_DESC_SINGULAR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_GROUP_DESC"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.CATEGORY_GROUP_DESC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_GROUP_ICON"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.CATEGORY_GROUP_ICON</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_ICON"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.CATEGORY_ICON</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CONFIG_FLAGS"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.CONFIG_FLAGS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CUSTOM_PRIVILEGED_PACKAGE_FAMILY_NAMES"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.CUSTOM_PRIVILEGED_PACKAGE_FAMILY_NAMES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.DEVICE_DESCRIPTION1"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.DEVICE_DESCRIPTION1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.DEVICE_DESCRIPTION2"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.DEVICE_DESCRIPTION2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.DEVICE_FUNCTION_SUB_RANK"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.DEVICE_FUNCTION_SUB_RANK</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.DISCOVERY_METHOD"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.DISCOVERY_METHOD</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.EXPERIENCE_ID"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.EXPERIENCE_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.FRIENDLY_NAME"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.FRIENDLY_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.HAS_PROBLEM"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.HAS_PROBLEM</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.ICON"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.ICON</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.INSTALL_IN_PROGRESS"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.INSTALL_IN_PROGRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_AUTHENTICATED"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_AUTHENTICATED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_CONNECTED"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_CONNECTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_DEFAULT_DEVICE"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_DEFAULT_DEVICE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_DEVICE_UNIQUELY_IDENTIFIABLE"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_DEVICE_UNIQUELY_IDENTIFIABLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_ENCRYPTED"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_ENCRYPTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_LOCAL_MACHINE"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_LOCAL_MACHINE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_METADATA_SEARCH_IN_PROGRESS"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_METADATA_SEARCH_IN_PROGRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_NETWORK_DEVICE"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_NETWORK_DEVICE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_NOT_INTERESTING_FOR_DISPLAY"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_NOT_INTERESTING_FOR_DISPLAY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_PAIRED"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_PAIRED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_REBOOT_REQUIRED"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_REBOOT_REQUIRED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_SHARED_DEVICE"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_SHARED_DEVICE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_SHOW_IN_DISCONNECTED_STATE"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.IS_SHOW_IN_DISCONNECTED_STATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.LAST_CONNECTED"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.LAST_CONNECTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.LAST_SEEN"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.LAST_SEEN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.LAUNCH_DEVICE_STAGE_FROM_EXPLORER"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.LAUNCH_DEVICE_STAGE_FROM_EXPLORER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.LAUNCH_DEVICE_STAGE_ON_DEVICE_CONNECT"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.LAUNCH_DEVICE_STAGE_ON_DEVICE_CONNECT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.MANUFACTURER"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.MANUFACTURER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.METADATA_CABINET"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.METADATA_CABINET</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.METADATA_CHECKSUM"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.METADATA_CHECKSUM</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.METADATA_PATH"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.METADATA_PATH</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.MODEL_NAME"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.MODEL_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.MODEL_NUMBER"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.MODEL_NUMBER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.PRIMARY_CATEGORY"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.PRIMARY_CATEGORY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.PRIVILEGED_PACKAGE_FAMILY_NAMES"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.PRIVILEGED_PACKAGE_FAMILY_NAMES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.REQUIRES_PAIRING_ELEVATION"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.REQUIRES_PAIRING_ELEVATION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.REQUIRES_UNINSTALL_ELEVATION"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.REQUIRES_UNINSTALL_ELEVATION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.UNPAIR_UNINSTALL"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.UNPAIR_UNINSTALL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.VERSION"><code class="docutils literal notranslate"><span class="pre">DeviceContainerDevicePropertyKeys.VERSION</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys"><code class="docutils literal notranslate"><span class="pre">DeviceDisplayDevicePropertyKeys</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.ALWAYS_SHOW_DEVICE_AS_CONNECTED"><code class="docutils literal notranslate"><span class="pre">DeviceDisplayDevicePropertyKeys.ALWAYS_SHOW_DEVICE_AS_CONNECTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.CATEGORY"><code class="docutils literal notranslate"><span class="pre">DeviceDisplayDevicePropertyKeys.CATEGORY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.DISCOVERY_METHOD"><code class="docutils literal notranslate"><span class="pre">DeviceDisplayDevicePropertyKeys.DISCOVERY_METHOD</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.IS_NETWORK_DEVICE"><code class="docutils literal notranslate"><span class="pre">DeviceDisplayDevicePropertyKeys.IS_NETWORK_DEVICE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.IS_NOT_INTERESTING_FOR_DISPLAY"><code class="docutils literal notranslate"><span class="pre">DeviceDisplayDevicePropertyKeys.IS_NOT_INTERESTING_FOR_DISPLAY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.IS_SHOW_IN_DISCONNECTED_STATE"><code class="docutils literal notranslate"><span class="pre">DeviceDisplayDevicePropertyKeys.IS_SHOW_IN_DISCONNECTED_STATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.REQUIRES_UNINSTALL_ELEVATION"><code class="docutils literal notranslate"><span class="pre">DeviceDisplayDevicePropertyKeys.REQUIRES_UNINSTALL_ELEVATION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.UNPAIR_UNINSTALL"><code class="docutils literal notranslate"><span class="pre">DeviceDisplayDevicePropertyKeys.UNPAIR_UNINSTALL</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceClassDevicePropertyKeys"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceClassDevicePropertyKeys</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceClassDevicePropertyKeys.DEFAULT_INTERFACE"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceClassDevicePropertyKeys.DEFAULT_INTERFACE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceClassDevicePropertyKeys.NAME"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceClassDevicePropertyKeys.NAME</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceDevicePropertyKeys</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.CLASS_GUID"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceDevicePropertyKeys.CLASS_GUID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.ENABLED"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceDevicePropertyKeys.ENABLED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.FRIENDLY_NAME"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceDevicePropertyKeys.FRIENDLY_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.REFERENCE_STRING"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceDevicePropertyKeys.REFERENCE_STRING</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.RESTRICTED"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceDevicePropertyKeys.RESTRICTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.SCHEMATIC_NAME"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceDevicePropertyKeys.SCHEMATIC_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.UNRESTRICTED_APP_CAPABILITIES"><code class="docutils literal notranslate"><span class="pre">DeviceInterfaceDevicePropertyKeys.UNRESTRICTED_APP_CAPABILITIES</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys"><code class="docutils literal notranslate"><span class="pre">DevicePackageDevicePropertyKeys</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.BRANDING_ICON"><code class="docutils literal notranslate"><span class="pre">DevicePackageDevicePropertyKeys.BRANDING_ICON</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.DETAILED_DESCRIPTION"><code class="docutils literal notranslate"><span class="pre">DevicePackageDevicePropertyKeys.DETAILED_DESCRIPTION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.DOCUMENTATION_LINK"><code class="docutils literal notranslate"><span class="pre">DevicePackageDevicePropertyKeys.DOCUMENTATION_LINK</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.ICON"><code class="docutils literal notranslate"><span class="pre">DevicePackageDevicePropertyKeys.ICON</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.MODEL"><code class="docutils literal notranslate"><span class="pre">DevicePackageDevicePropertyKeys.MODEL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.VENDOR_WEB_SITE"><code class="docutils literal notranslate"><span class="pre">DevicePackageDevicePropertyKeys.VENDOR_WEB_SITE</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty"><code class="docutils literal notranslate"><span class="pre">DeviceProperty</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.int_or_none"><code class="docutils literal notranslate"><span class="pre">DeviceProperty.int_or_none</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.key"><code class="docutils literal notranslate"><span class="pre">DeviceProperty.key</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.str_or_none"><code class="docutils literal notranslate"><span class="pre">DeviceProperty.str_or_none</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.type"><code class="docutils literal notranslate"><span class="pre">DeviceProperty.type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.value"><code class="docutils literal notranslate"><span class="pre">DeviceProperty.value</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.value_raw"><code class="docutils literal notranslate"><span class="pre">DeviceProperty.value_raw</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyEmptyType"><code class="docutils literal notranslate"><span class="pre">DevicePropertyEmptyType</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKey"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKey</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKey.fmtid"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKey.fmtid</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKey.from_define"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKey.from_define()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKey.pid"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKey.pid</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.ADDITIONAL_SOFTWARE_REQUESTED"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.ADDITIONAL_SOFTWARE_REQUESTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.ADDRESS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.ADDRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.ASSIGNED_TO_GUEST"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.ASSIGNED_TO_GUEST</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BASE_CONTAINER_ID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.BASE_CONTAINER_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BIOS_DEVICE_NAME"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.BIOS_DEVICE_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BUS_NUMBER"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.BUS_NUMBER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BUS_RELATIONS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.BUS_RELATIONS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BUS_REPORTED_DEVICE_DESC"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.BUS_REPORTED_DEVICE_DESC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BUS_TYPE_GUID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.BUS_TYPE_GUID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CAPABILITIES"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.CAPABILITIES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CHARACTERISTICS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.CHARACTERISTICS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CHILDREN"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.CHILDREN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CLASS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.CLASS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CLASS_GUID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.CLASS_GUID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.COMPANION_APPS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.COMPANION_APPS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.COMPATIBLE_IDS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.COMPATIBLE_IDS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CONFIGURATION_ID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.CONFIGURATION_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CONFIG_FLAGS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.CONFIG_FLAGS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CONTAINER_ID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.CONTAINER_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CREATOR_PROCESS_ID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.CREATOR_PROCESS_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEBUGGER_SAFE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DEBUGGER_SAFE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEPENDENCY_DEPENDENTS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DEPENDENCY_DEPENDENTS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEPENDENCY_PROVIDERS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DEPENDENCY_PROVIDERS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEVICE_DESC"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DEVICE_DESC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEV_NODE_STATUS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DEV_NODE_STATUS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEV_TYPE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DEV_TYPE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DHP_REBALANCE_POLICY"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DHP_REBALANCE_POLICY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_CO_INSTALLERS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_CO_INSTALLERS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_DATE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_DATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_DESC"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_DESC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_INF_PATH"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_INF_PATH</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_INF_SECTION"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_INF_SECTION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_INF_SECTION_EXT"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_INF_SECTION_EXT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_LOGO_LEVEL"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_LOGO_LEVEL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_PROBLEM_DESC"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_PROBLEM_DESC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_PROP_PAGE_PROVIDER"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_PROP_PAGE_PROVIDER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_PROVIDER"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_PROVIDER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_RANK"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_RANK</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_VERSION"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.DRIVER_VERSION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.EJECTION_RELATIONS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.EJECTION_RELATIONS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.ENUMERATOR_NAME"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.ENUMERATOR_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.EXCLUSIVE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.EXCLUSIVE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.EXTENDED_ADDRESS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.EXTENDED_ADDRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.EXTENDED_CONFIGURATION_IDS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.EXTENDED_CONFIGURATION_IDS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRMWARE_DATE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.FIRMWARE_DATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRMWARE_REVISION"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.FIRMWARE_REVISION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRMWARE_VENDOR"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.FIRMWARE_VENDOR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRMWARE_VERSION"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.FIRMWARE_VERSION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRST_INSTALL_DATE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.FIRST_INSTALL_DATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FRIENDLY_NAME"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.FRIENDLY_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FRIENDLY_NAME_ATTRIBUTES"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.FRIENDLY_NAME_ATTRIBUTES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.GENERIC_DRIVER_INSTALLED"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.GENERIC_DRIVER_INSTALLED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.HARDWARE_IDS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.HARDWARE_IDS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.HAS_PROBLEM"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.HAS_PROBLEM</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.INSTALL_DATE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.INSTALL_DATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.INSTALL_STATE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.INSTALL_STATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.INSTANCE_ID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.INSTANCE_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.IN_LOCAL_MACHINE_CONTAINER"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.IN_LOCAL_MACHINE_CONTAINER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.IS_ASSOCIATEABLE_BY_USER_ACTION"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.IS_ASSOCIATEABLE_BY_USER_ACTION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.IS_PRESENT"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.IS_PRESENT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.IS_REBOOT_REQUIRED"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.IS_REBOOT_REQUIRED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LAST_ARRIVAL_DATE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.LAST_ARRIVAL_DATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LAST_REMOVAL_DATE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.LAST_REMOVAL_DATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LEGACY"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.LEGACY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LEGACY_BUS_TYPE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.LEGACY_BUS_TYPE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LOCATION_INFO"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.LOCATION_INFO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LOCATION_PATHS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.LOCATION_PATHS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LOWER_FILTERS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.LOWER_FILTERS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MANUFACTURER"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.MANUFACTURER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MANUFACTURER_ATTRIBUTES"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.MANUFACTURER_ATTRIBUTES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MATCHING_DEVICE_ID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.MATCHING_DEVICE_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MODEL"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.MODEL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MODEL_ID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.MODEL_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.NAME"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.NO_CONNECT_SOUND"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.NO_CONNECT_SOUND</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.NUMA_NODE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.NUMA_NODE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.NUMA_PROXIMITY_DOMAIN"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.NUMA_PROXIMITY_DOMAIN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PARENT"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.PARENT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PDO_NAME"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.PDO_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PHYSICAL_DEVICE_LOCATION"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.PHYSICAL_DEVICE_LOCATION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.POST_INSTALL_IN_PROGRESS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.POST_INSTALL_IN_PROGRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.POWER_DATA"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.POWER_DATA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.POWER_RELATIONS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.POWER_RELATIONS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PRESENCE_NOT_FOR_DEVICE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.PRESENCE_NOT_FOR_DEVICE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PRIMARY_COMPANION_APP"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.PRIMARY_COMPANION_APP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PROBLEM_CODE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.PROBLEM_CODE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PROBLEM_STATUS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.PROBLEM_STATUS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REMOVAL_POLICY"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.REMOVAL_POLICY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REMOVAL_POLICY_DEFAULT"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.REMOVAL_POLICY_DEFAULT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REMOVAL_POLICY_OVERRIDE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.REMOVAL_POLICY_OVERRIDE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REMOVAL_RELATIONS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.REMOVAL_RELATIONS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REPORTED"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.REPORTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REPORTED_DEVICE_IDS_HASH"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.REPORTED_DEVICE_IDS_HASH</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.RESOURCE_PICKER_EXCEPTIONS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.RESOURCE_PICKER_EXCEPTIONS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.RESOURCE_PICKER_TAGS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.RESOURCE_PICKER_TAGS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SAFE_REMOVAL_REQUIRED"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SAFE_REMOVAL_REQUIRED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SAFE_REMOVAL_REQUIRED_OVERRIDE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SAFE_REMOVAL_REQUIRED_OVERRIDE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SECURITY"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SECURITY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SECURITY_SDS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SECURITY_SDS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SERVICE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SERVICE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SESSION_ID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SESSION_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SHOW_IN_UNINSTALL_UI"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SHOW_IN_UNINSTALL_UI</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SIBLINGS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SIBLINGS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SIGNAL_STRENGTH"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SIGNAL_STRENGTH</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SOFT_RESTART_SUPPORTED"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.SOFT_RESTART_SUPPORTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.STACK"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.STACK</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.TRANSPORT_RELATIONS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.TRANSPORT_RELATIONS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.UI_NUMBER"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.UI_NUMBER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.UI_NUMBER_DESC_FORMAT"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.UI_NUMBER_DESC_FORMAT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.UPPER_FILTERS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyKeys.UPPER_FILTERS</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyModifier"><code class="docutils literal notranslate"><span class="pre">DevicePropertyModifier</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyModifier.ARRAY"><code class="docutils literal notranslate"><span class="pre">DevicePropertyModifier.ARRAY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyModifier.LIST"><code class="docutils literal notranslate"><span class="pre">DevicePropertyModifier.LIST</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyNullType"><code class="docutils literal notranslate"><span class="pre">DevicePropertyNullType</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.BINARY"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.BINARY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.BOOLEAN"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.BOOLEAN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.BYTE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.BYTE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.CURRENCY"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.CURRENCY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DATE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.DATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DECIMAL"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.DECIMAL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DEVPROPKEY"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.DEVPROPKEY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DEVPROPTYPE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.DEVPROPTYPE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DOUBLE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.DOUBLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.EMPTY"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.EMPTY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.ERROR"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.FILETIME"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.FILETIME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.FLOAT"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.FLOAT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.GUID"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.GUID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.INT16"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.INT16</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.INT32"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.INT32</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.INT64"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.INT64</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.NTSTATUS"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.NTSTATUS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.NULL"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.NULL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.SBYTE"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.SBYTE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.SECURITY_DESCRIPTOR"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.SECURITY_DESCRIPTOR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.SECURITY_DESCRIPTOR_STRING"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.SECURITY_DESCRIPTOR_STRING</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.STRING"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.STRING</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.STRING_INDIRECT"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.STRING_INDIRECT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.STRING_LIST"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.STRING_LIST</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.UINT16"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.UINT16</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.UINT32"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.UINT32</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.UINT64"><code class="docutils literal notranslate"><span class="pre">DevicePropertyType.UINT64</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceQueryDevicePropertyKeys"><code class="docutils literal notranslate"><span class="pre">DeviceQueryDevicePropertyKeys</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceQueryDevicePropertyKeys.OBJECT_TYPE"><code class="docutils literal notranslate"><span class="pre">DeviceQueryDevicePropertyKeys.OBJECT_TYPE</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="powpowerman.knownguid.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">前へ</p>
+        <p class="prev-next-title">powpowerman.knownguid module</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="powdeviceinfo.cfgmgr.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">次へ</p>
+        <p class="prev-next-title">powdeviceinfo.cfgmgr package</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目次
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subpackages">Subpackages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+著者 poti-san
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, poti-san.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

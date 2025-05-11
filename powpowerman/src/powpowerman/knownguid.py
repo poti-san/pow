@@ -1,0 +1,291 @@
+"""既知の電力設定GUIDを提供します。
+
+GCの管理するオブジェクトを減らすため、このファイルでは定数を静的メソッドとして実装します。
+"""
+
+from powguid import Guid
+
+
+class PowerKnownSubgroupGuid:
+    """既知の電力サブグループGUID。
+
+    電力サブグループの名前は電力サブグループのプレフィックスで使用するため、
+    名前には長くなりすぎないようにハイフンは用いません。
+    """
+
+    @staticmethod
+    def idleresiliency() -> Guid:
+        return Guid.from_define(0x2E601130, 0x5351, 0x4D9D, 0x8E, 0x4, 0x25, 0x29, 0x66, 0xBA, 0xD0, 0x54)
+
+    @staticmethod
+    def video() -> Guid:
+        return Guid.from_define(0x7516B95F, 0xF776, 0x4464, 0x8C, 0x53, 0x06, 0x16, 0x7F, 0x40, 0xCC, 0x99)
+
+    @staticmethod
+    def adaptivepowerbehavior():
+        return Guid.from_define(0x8619B916, 0xE004, 0x4DD8, 0x9B, 0x66, 0xDA, 0xE8, 0x6F, 0x80, 0x66, 0x98)
+
+    @staticmethod
+    def disk() -> Guid:
+        return Guid.from_define(0x0012EE47, 0x9041, 0x4B5D, 0x9B, 0x77, 0x53, 0x5F, 0xBA, 0x8B, 0x14, 0x42)
+
+    @staticmethod
+    def sleep() -> Guid:
+        return Guid.from_define(0x238C9FA8, 0x0AAD, 0x41ED, 0x83, 0xF4, 0x97, 0xBE, 0x24, 0x2C, 0x8F, 0x20)
+
+    @staticmethod
+    def energysaver() -> Guid:
+        return Guid.from_define(0xDE830923, 0xA562, 0x41AF, 0xA0, 0x86, 0xE3, 0xA2, 0xC6, 0xBA, 0xD2, 0xDA)
+
+    @staticmethod
+    def system_button() -> Guid:
+        return Guid.from_define(0x4F971E89, 0xEEBD, 0x4455, 0xA8, 0xDE, 0x9E, 0x59, 0x04, 0x0E, 0x73, 0x47)
+
+    @staticmethod
+    def battery() -> Guid:
+        return Guid.from_define(0xE73A048D, 0xBF27, 0x4F12, 0x97, 0x31, 0x8B, 0x20, 0x76, 0xE8, 0x89, 0x1F)
+
+    @staticmethod
+    def processor() -> Guid:
+        return Guid.from_define(0x54533251, 0x82BE, 0x4824, 0x96, 0xC1, 0x47, 0xB6, 0x0B, 0x74, 0x0D, 0x00)
+
+    @staticmethod
+    def pciexpress() -> Guid:
+        return Guid.from_define(0x501A4D13, 0x42AF, 0x4429, 0x9F, 0xD1, 0xA8, 0x21, 0x8C, 0x26, 0x8E, 0x20)
+
+    @staticmethod
+    def intsteer() -> Guid:
+        return Guid.from_define(0x48672F38, 0x7A9A, 0x4BB2, 0x8B, 0xF8, 0x3D, 0x85, 0xBE, 0x19, 0xDE, 0x4E)
+
+    @staticmethod
+    def graphics() -> Guid:
+        return Guid.from_define(0x5FB4938D, 0x1EE8, 0x4B0F, 0x9A, 0x3C, 0x50, 0x36, 0xB0, 0xAB, 0x99, 0x5C)
+
+
+class PowerModeGuids:
+    """電力モードのGUID。"""
+
+    @staticmethod
+    def best_efficiency() -> Guid:
+        return Guid.from_define(0x961CC777, 0x2547, 0x4F9D, 0x81, 0x74, 0x7D, 0x86, 0x18, 0x1B, 0x8A, 0x7A)
+
+    @staticmethod
+    def none() -> Guid:
+        return Guid.from_define(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+    @staticmethod
+    def performance() -> Guid:
+        return Guid.from_define(0x3AF9B8D9, 0x7C97, 0x431D, 0xAD, 0x78, 0x34, 0xA8, 0xBF, 0xEA, 0x43, 0x9F)
+
+    @staticmethod
+    def best_performance() -> Guid:
+        return Guid.from_define(0xDED574B5, 0x45A0, 0x4F42, 0x87, 0x37, 0x46, 0x34, 0x5C, 0x9, 0xC2, 0x38)
+
+
+class PowerKnownSettingGuid:
+    """既知の電力設定のGUID。"""
+
+    #
+    # Idle residency
+    #
+
+    @staticmethod
+    def idleresidency_deep_sleep_enabled() -> Guid:
+        """ディープスリープポリシー設定。"""
+        return Guid.from_define(0xD502F7EE, 0x1DC7, 0x4EFD, 0xA5, 0x5D, 0xF0, 0x4B, 0x6F, 0x5C, 0x5, 0x45)
+
+    @staticmethod
+    def idleresidency_disk_coalescing_powerdown_timeout() -> Guid:
+        """IO結合がアクティブな場合に最後のディスクアクセスから電源を切るまでのミリ秒数。"""
+        return Guid.from_define(0xC36F0EB4, 0x2988, 0x4A70, 0x8E, 0xEE, 0x8, 0x84, 0xFC, 0x2C, 0x24, 0x33)
+
+    @staticmethod
+    def idleresidency_execution_required_request_timeout() -> Guid:
+        """CS Enterから実行要求リクエストを非活性化するまでの待機秒数。
+
+         0：実行電力要求は無効化されています。
+        -1：実行電力要求は常に活性化されています。
+        """
+        return Guid.from_define(0x3166BC41, 0x7E98, 0x4E03, 0xB3, 0x4E, 0xEC, 0xF, 0x5F, 0x2B, 0x21, 0x8E)
+
+    #
+    # Video
+    #
+
+    @staticmethod
+    def video_powerdown_timeout() -> Guid:
+        """ユーザーの最終入力から画面の電源を切るまでの秒数。"""
+        return Guid.from_define(0x3C0BC021, 0xC8A8, 0x4E07, 0xA9, 0x73, 0x6B, 0x14, 0xCB, 0xCB, 0x2B, 0x7E)
+
+    @staticmethod
+    def video_annoyance_timeout() -> Guid:
+        """適応型調光のオン・オフ。Windows 8.1で廃止されました。"""
+        return Guid.from_define(0x82DBCF2D, 0xCD67, 0x40C5, 0xBF, 0xDC, 0x9F, 0x1A, 0x5C, 0xCD, 0x46, 0x63)
+
+    @staticmethod
+    def video_adaptive_percent_increase() -> Guid:
+        """適応型調光タイムアウトの増加量。Windows 8.1で廃止されました。"""
+        return Guid.from_define(0xEED904DF, 0xB142, 0x4183, 0xB1, 0x0B, 0x5A, 0x11, 0x97, 0xA3, 0x78, 0x64)
+
+    @staticmethod
+    def video_dim_timeout() -> Guid:
+        """ユーザーの最終入力から画面を暗くするまでの秒数。"""
+        return Guid.from_define(0x17AAA29B, 0x8B43, 0x4B94, 0xAA, 0xFE, 0x35, 0xF6, 0x4D, 0xAA, 0xF1, 0xEE)
+
+    @staticmethod
+    def video_adaptive_powerdown() -> Guid:
+        """OSが画面の電源オフに（以前の動作に基づく）適応型タイマーを使うか。"""
+        return Guid.from_define(0x90959D22, 0xD6A1, 0x49B9, 0xAF, 0x93, 0xBC, 0xE8, 0x85, 0xAD, 0x33, 0x5B)
+
+    @staticmethod
+    def video_monitor_power_on() -> Guid:
+        """モニターの電力がオンか。"""
+        return Guid.from_define(0x02731015, 0x4510, 0x4526, 0x99, 0xE6, 0xE5, 0xA1, 0x7E, 0xBD, 0x1A, 0xEA)
+
+    @staticmethod
+    def video_devicepowerpolicy_brightness() -> Guid:
+        """通常状態の画面の明るさポリシー。"""
+        return Guid.from_define(0xADED5E82, 0xB909, 0x4619, 0x99, 0x49, 0xF5, 0xD7, 0x1D, 0xAC, 0x0B, 0xCB)
+
+    @staticmethod
+    def video_devicepowerpolicy_dim_brightness() -> Guid:
+        """調光状態の画面の明るさポリシー。"""
+        return Guid.from_define(0xF1FBFDE2, 0xA960, 0x4165, 0x9F, 0x88, 0x50, 0x66, 0x79, 0x11, 0xCE, 0x96)
+
+    @staticmethod
+    def video_current_monitor_beightness() -> Guid:
+        """現在のモニターの明るさ。"""
+        return Guid.from_define(0x8FFEE2C6, 0x2D01, 0x46BE, 0xAD, 0xB9, 0x39, 0x8A, 0xDD, 0xC5, 0xB4, 0xFF)
+
+    @staticmethod
+    def video_adaptive_display_brightness() -> Guid:
+        """OSが画面の適応型調光に環境光センサーを使うか。"""
+        return Guid.from_define(0xFBD9AA66, 0x9553, 0x4097, 0xBA, 0x44, 0xED, 0x6E, 0x9D, 0x65, 0xEA, 0xB8)
+
+    @staticmethod
+    def video_console_display_state() -> Guid:
+        """現在のモニター状態。"""
+        return Guid.from_define(0x6FE69556, 0x704A, 0x47A0, 0x8F, 0x24, 0xC2, 0x8D, 0x93, 0x6F, 0xDA, 0x47)
+
+    @staticmethod
+    def video_allow_display_required() -> Guid:
+        """電力要求に必要なディスプレイを作成可能か。"""
+        return Guid.from_define(0xA9CEB8DA, 0xCD46, 0x44FB, 0xA9, 0x8B, 0x02, 0xAF, 0x69, 0xDE, 0x46, 0x23)
+
+    @staticmethod
+    def video_console_lock_timeout() -> Guid:
+        """インタラクティブコンソールのロックから（センサーがユーザー不在を示してから）画面の電源を切るまでの秒数。0は無効化を示します。"""
+        return Guid.from_define(0x8EC4B3A5, 0x6868, 0x48C2, 0xBE, 0x75, 0x4F, 0x30, 0x44, 0xBE, 0x88, 0xA7)
+
+    @staticmethod
+    def video_advanced_color_quality_bits() -> Guid:
+        """Advanced Color対応ディスプレイで視覚効果とバッテリー寿命のどちらを優先するか。"""
+        return Guid.from_define(0x684C3E69, 0xA4F7, 0x4014, 0x87, 0x54, 0xD4, 0x51, 0x79, 0xA5, 0x61, 0x67)
+
+    #
+    # Adaptive power behavior
+    #
+
+    @staticmethod
+    def adaptivepowerbehavior_non_adaptive_input_timeout() -> Guid:
+        """ "ユーザー不明状態の入力タイムアウト秒数。0は無効化を示します。"""
+        return Guid.from_define(0x5ADBBFBC, 0x74E, 0x4DA1, 0xBA, 0x38, 0xDB, 0x8B, 0x36, 0xB2, 0xC8, 0xF3)
+
+    @staticmethod
+    def adaptivepowerbehavior_input_controller_state() -> Guid:
+        """入力コントローラーのグローバルシステム状態。"""
+        return Guid.from_define(0xE98FAE9, 0xF45A, 0x4DE1, 0xA7, 0x57, 0x60, 0x31, 0xF1, 0x97, 0xF6, 0xEA)
+
+    #
+    # Harddisk
+    #
+
+    @staticmethod
+    def disk_max_power() -> Guid:
+        """ "最大電力消費レベル。"""
+        return Guid.from_define(0x51DEA550, 0xBB38, 0x4BC4, 0x99, 0x1B, 0xEA, 0xCF, 0x37, 0xBE, 0x5E, 0xC8)
+
+    @staticmethod
+    def disk_powerdown_timeout() -> Guid:
+        """最後のディスクアクセスからディスクの電源を切るまでの秒数。"""
+        return Guid.from_define(0x6738E2C4, 0xE8A5, 0x4A42, 0xB1, 0x6A, 0xE0, 0x40, 0xE7, 0x69, 0x75, 0x6E)
+
+    @staticmethod
+    def disk_idle_timeout() -> Guid:
+        """IO結合の設定を考慮して、最後のディスクアクセスからディスクの電源を切るまでのミリ秒。"""
+        return Guid.from_define(0x58E39BA8, 0xB8E6, 0x4EF6, 0x90, 0xD0, 0x89, 0xAE, 0x32, 0xB2, 0x58, 0xD6)
+
+    @staticmethod
+    def disk_burst_ignore_threshold() -> Guid:
+        """ディスク待機時間の計算時に無視する連続アクティブ時間。"""
+        return Guid.from_define(0x80E3C60E, 0xBB94, 0x4AD8, 0xBB, 0xE0, 0x0D, 0x31, 0x95, 0xEF, 0xC6, 0x63)
+
+    @staticmethod
+    def disk_adaptive_powerdown() -> Guid:
+        """OSがディスクの電源オフに適応型タイマーが使用するか。"""
+        return Guid.from_define(0x396A32E1, 0x499A, 0x40B2, 0x91, 0x24, 0xA9, 0x6A, 0xFE, 0x70, 0x76, 0x67)
+
+    @staticmethod
+    def disk_nvme_noppme() -> Guid:
+        """NVMeのNon-Operational Power State Permissive Modeが有効か。"""
+        return Guid.from_define(0xFC7372B6, 0xAB2D, 0x43EE, 0x87, 0x97, 0x15, 0xE9, 0x84, 0x1F, 0x2C, 0xCA)
+
+    #
+    # Sleep
+    #
+
+    @staticmethod
+    def sleep_idle_threshold() -> Guid:
+        """待機閾値%。Windows 7 (Windows 6.1)で廃止されました。"""
+        return Guid.from_define(0x81CD32E0, 0x7833, 0x44F3, 0x87, 0x37, 0x70, 0x81, 0xF3, 0x8D, 0x1F, 0x70)
+
+    @staticmethod
+    def sleep_standby_timeout() -> Guid:
+        """スタンバイモード（S1、S2、S3）へ移行する前の「待機状態」と判定する秒数。"""
+        return Guid.from_define(0x29F6C1DB, 0x86DA, 0x48C5, 0x9F, 0xDB, 0xF2, 0xB6, 0x7B, 0x1F, 0x44, 0xDA)
+
+    @staticmethod
+    def sleep_unattend_sleep_timeout() -> Guid:
+        """システム無人スリープタイムアウト後に再スリープするまでの秒数。
+        0は標準standby/hibernate待機ポリシーの使用を示します。"""
+        return Guid.from_define(0x7BC4A2F9, 0xD8FC, 0x4469, 0xB0, 0x7B, 0x33, 0xEB, 0x78, 0x5A, 0xAC, 0xA0)
+
+    @staticmethod
+    def sleep_hibernate_timeout() -> Guid:
+        """ハイバネーション(S4)までの待機秒数。"""
+        return Guid.from_define(0x9D7815A6, 0x7EE4, 0x497E, 0x88, 0x88, 0x51, 0x5A, 0x05, 0xF0, 0x23, 0x64)
+
+    @staticmethod
+    def video_hibernate_fasts4_policy() -> Guid:
+        """高速ハイバネーション(S4)対応時に有効か。"""
+        return Guid.from_define(0x94AC6D29, 0x73CE, 0x41A6, 0x80, 0x9F, 0x63, 0x63, 0xBA, 0x21, 0xB4, 0x7E)
+
+    @staticmethod
+    def sleep_critical_power_transition() -> Guid:
+        """スリープ状態移行の切迫性制御。切迫スリープ移行はアプリケーション、システム、ドライバーに通知されません。"""
+        return Guid.from_define(0xB7A27025, 0xE569, 0x46C2, 0xA5, 0x04, 0x2B, 0x96, 0xCA, 0xD2, 0x25, 0xA1)
+
+    @staticmethod
+    def sleep_system_awaymode() -> Guid:
+        """退席モード中か。"""
+        return Guid.from_define(0x98A7F580, 0x01F7, 0x48AA, 0x9C, 0x0F, 0x44, 0x35, 0x2C, 0x29, 0xE5, 0xC0)
+
+    @staticmethod
+    def sleep_allow_awaymode() -> Guid:
+        """退席モードが有効か。"""
+        return Guid.from_define(0x25DFA149, 0x5DD1, 0x4736, 0xB5, 0xAB, 0xE8, 0xA3, 0x7B, 0x5B, 0x81, 0x87)
+
+    @staticmethod
+    def sleep_user_presence_prediction() -> Guid:
+        """User Presence Predictionモードが有効か。"""
+        return Guid.from_define(0x82011705, 0xFB95, 0x4D46, 0x8D, 0x35, 0x40, 0x42, 0xB1, 0xD2, 0xD, 0xEF)
+
+    @staticmethod
+    def sleep_standby_budget_grace_period() -> Guid:
+        """Standby Budget Grace Period。"""
+        return Guid.from_define(0x60C07FE1, 0x0556, 0x45CF, 0x99, 0x03, 0xD5, 0x6E, 0x32, 0x21, 0x2, 0x42)
+
+    @staticmethod
+    def sleep_standby_budget_percent() -> Guid:
+        """Standby Budget Percent。"""
+        return Guid.from_define(0x9FE527BE, 0x1B70, 0x48DA, 0x93, 0x0D, 0x7B, 0xCF, 0x17, 0xB4, 0x49, 0x90)

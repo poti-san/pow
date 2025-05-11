@@ -1,0 +1,2032 @@
+
+<!DOCTYPE html>
+
+
+<html lang="ja" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>索引 &#8212; pow  ドキュメント</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=1cf7f4d9"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=4755f45a"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";import elkLayouts from "https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs";mermaid.registerLayoutLoaders(elkLayouts);mermaid.initialize({startOnLoad:false});</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";
+window.addEventListener("load", () => mermaid.run());
+</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
+    <link rel="index" title="索引" href="#" />
+    <link rel="search" title="検索" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="ja"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">pow  ドキュメント</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">検索</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="package_summary/index.html">パッケージの概要</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="package_summary/powsid.html">powsidパッケージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="package_summary/powguid.html">powguidパッケージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="package_summary/powpowerman.html">powpowermanパッケージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="package_summary/powdeviceinfo.html">powdeviceinfoパッケージ</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="apiref.html">APIドキュメント</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="apiref/powsid.html">powsid package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apiref/powguid.html">powguid package</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="apiref/powpowerman.html">powpowerman package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="apiref/powpowerman.knownguid.html">powpowerman.knownguid module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="apiref/powdeviceinfo.html">powdeviceinfo package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="apiref/powdeviceinfo.cfgmgr.html">powdeviceinfo.cfgmgr package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="apiref/powdeviceinfo.cfgmgr.crresult.html">powdeviceinfo.cfgmgr.crresult module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="apiref/powdeviceinfo.devprop.html">powdeviceinfo.devprop module</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">索引</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py-modindex.html">モジュール索引</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全画面モード"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+
+<h1 id="index">索引</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#K"><strong>K</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#W"><strong>W</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.ac_value">ac_value (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.ac_value_index">ac_value_index (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.ac_value_size">ac_value_size (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.ac_value_type">ac_value_type (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_ADMINISTRATOR">ACCOUNT_ADMINISTRATOR (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_CERT_ADMINS">ACCOUNT_CERT_ADMINS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_CLONEABLE_CONTROLLERS">ACCOUNT_CLONEABLE_CONTROLLERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_COMPUTERS">ACCOUNT_COMPUTERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_CONTROLLERS">ACCOUNT_CONTROLLERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_DEFAULT_SYSTEM_MANAGED">ACCOUNT_DEFAULT_SYSTEM_MANAGED (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_DOMAIN_ADMINS">ACCOUNT_DOMAIN_ADMINS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_DOMAIN_GUESTS">ACCOUNT_DOMAIN_GUESTS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_DOMAIN_USERS">ACCOUNT_DOMAIN_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_ENTERPRISE_ADMINS">ACCOUNT_ENTERPRISE_ADMINS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_ENTERPRISE_KEY_ADMINS">ACCOUNT_ENTERPRISE_KEY_ADMINS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_GUEST">ACCOUNT_GUEST (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_KEY_ADMINS">ACCOUNT_KEY_ADMINS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_KRBTGT">ACCOUNT_KRBTGT (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_POLICY_ADMINS">ACCOUNT_POLICY_ADMINS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_PROTECTED_USERS">ACCOUNT_PROTECTED_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_RAS_AND_IAS_SERVERS">ACCOUNT_RAS_AND_IAS_SERVERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_READONLY_CONTROLLERS">ACCOUNT_READONLY_CONTROLLERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ACCOUNT_SCHEMA_ADMINS">ACCOUNT_SCHEMA_ADMINS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.active_scheme">active_scheme() (powpowerman.PowerScheme の静的メソッド)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.adaptivepowerbehavior">adaptivepowerbehavior() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.adaptivepowerbehavior_input_controller_state">adaptivepowerbehavior_input_controller_state() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.adaptivepowerbehavior_non_adaptive_input_timeout">adaptivepowerbehavior_non_adaptive_input_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.ADDITIONAL_SOFTWARE_REQUESTED">ADDITIONAL_SOFTWARE_REQUESTED (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.ADDRESS">ADDRESS (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.ADDRESS">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.ALIAS">ALIAS (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.ALWAYS_SHOW_DEVICE_AS_CONNECTED">ALWAYS_SHOW_DEVICE_AS_CONNECTED (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.ALWAYS_SHOW_DEVICE_AS_CONNECTED">(powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ANONYMOUS">ANONYMOUS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.AppliancePC">AppliancePC (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.APPLICATION_PACKAGE_AUTHORITY">APPLICATION_PACKAGE_AUTHORITY (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.apply_changes">apply_changes() (powpowerman.PowerSetting のメソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyModifier.ARRAY">ARRAY (powdeviceinfo.devprop.DevicePropertyModifier の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.as_possible_setting">as_possible_setting (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.ASSIGNED_TO_GUEST">ASSIGNED_TO_GUEST (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.ASSOCIATION_ARRAY">ASSOCIATION_ARRAY (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.AUTHENTICATED_USER">AUTHENTICATED_USER (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.AUTHENTICATION_AUTHORITY_ASSERTED">AUTHENTICATION_AUTHORITY_ASSERTED (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.AUTHENTICATION_FRESH_KEY_AUTH">AUTHENTICATION_FRESH_KEY_AUTH (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.AUTHENTICATION_KEY_PROPERTY_ATTESTATION">AUTHENTICATION_KEY_PROPERTY_ATTESTATION (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.AUTHENTICATION_KEY_PROPERTY_MFA">AUTHENTICATION_KEY_PROPERTY_MFA (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.AUTHENTICATION_KEY_TRUST">AUTHENTICATION_KEY_TRUST (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.AUTHENTICATION_SERVICE_ASSERTED">AUTHENTICATION_SERVICE_ASSERTED (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BASE_CONTAINER_ID">BASE_CONTAINER_ID (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.BASELINE_EXPERIENCE_ID">BASELINE_EXPERIENCE_ID (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BATCH">BATCH (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSubGroupGuid.BATTERY">BATTERY (powpowerman.PowerKnownSubGroupGuid の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.battery">battery() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids.best_efficiency">best_efficiency() (powpowerman.knownguid.PowerModeGuids の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids.best_performance">best_performance() (powpowerman.knownguid.PowerModeGuids の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.BINARY">BINARY (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.BINARY">(powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BIOS_DEVICE_NAME">BIOS_DEVICE_NAME (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.BOOLEAN">BOOLEAN (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.BRANDING_ICON">BRANDING_ICON (powdeviceinfo.devprop.DevicePackageDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_ACCESS_CONTROL_ASSISTANCE_OPERATORS">BUILTIN_ACCESS_CONTROL_ASSISTANCE_OPERATORS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_ACCOUNT_OPERATORS">BUILTIN_ACCOUNT_OPERATORS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_ADMINISTRATORS">BUILTIN_ADMINISTRATORS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_ANY_PACKAGE">BUILTIN_ANY_PACKAGE (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_AUTHORIZATION_ACCESS">BUILTIN_AUTHORIZATION_ACCESS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_BACKUP_OPERATORS">BUILTIN_BACKUP_OPERATORS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_CERT_SVC_D_COM_ACCESS_GROUP">BUILTIN_CERT_SVC_D_COM_ACCESS_GROUP (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_CRYPTO_OPERATORS">BUILTIN_CRYPTO_OPERATORS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_DCOM_USERS">BUILTIN_DCOM_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_DEFAULT_SYSTEM_MANAGED_GROUP">BUILTIN_DEFAULT_SYSTEM_MANAGED_GROUP (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_DEVICE_OWNERS">BUILTIN_DEVICE_OWNERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_DOMAIN">BUILTIN_DOMAIN (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_EVENT_LOG_READERS_GROUP">BUILTIN_EVENT_LOG_READERS_GROUP (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_GUESTS">BUILTIN_GUESTS (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_HYPER_V_ADMINS">BUILTIN_HYPER_V_ADMINS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_I_USERS">BUILTIN_I_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_INCOMING_FOREST_TRUST_BUILDERS">BUILTIN_INCOMING_FOREST_TRUST_BUILDERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_NETWORK_CONFIGURATION_OPERATORS">BUILTIN_NETWORK_CONFIGURATION_OPERATORS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_OPEN_SSH_USERS">BUILTIN_OPEN_SSH_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_PERF_LOGGING_USERS">BUILTIN_PERF_LOGGING_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_PERF_MONITORING_USERS">BUILTIN_PERF_MONITORING_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_POWER_USERS">BUILTIN_POWER_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_PRE_WINDOWS2000_COMPATIBLE_ACCESS">BUILTIN_PRE_WINDOWS2000_COMPATIBLE_ACCESS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_PRINT_OPERATORS">BUILTIN_PRINT_OPERATORS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_RDS_ENDPOINT_SERVERS">BUILTIN_RDS_ENDPOINT_SERVERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_RDS_MANAGEMENT_SERVERS">BUILTIN_RDS_MANAGEMENT_SERVERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_RDS_REMOTE_ACCESS_SERVERS">BUILTIN_RDS_REMOTE_ACCESS_SERVERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_REMOTE_DESKTOP_USERS">BUILTIN_REMOTE_DESKTOP_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_REMOTE_MANAGEMENT_USERS">BUILTIN_REMOTE_MANAGEMENT_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_REPLICATOR">BUILTIN_REPLICATOR (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_STORAGE_REPLICA_ADMINS">BUILTIN_STORAGE_REPLICA_ADMINS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_SYSTEM_OPERATORS">BUILTIN_SYSTEM_OPERATORS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_TERMINAL_SERVER_LICENSE_SERVERS">BUILTIN_TERMINAL_SERVER_LICENSE_SERVERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_USER_MODE_HARDWARE_OPERATORS">BUILTIN_USER_MODE_HARDWARE_OPERATORS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.BUILTIN_USERS">BUILTIN_USERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BUS_NUMBER">BUS_NUMBER (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BUS_RELATIONS">BUS_RELATIONS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BUS_REPORTED_DEVICE_DESC">BUS_REPORTED_DEVICE_DESC (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.BUS_TYPE_GUID">BUS_TYPE_GUID (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.BYTE">BYTE (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.bytes">bytes (powsid.SID のプロパティ)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CACHEABLE_PRINCIPALS_GROUP">CACHEABLE_PRINCIPALS_GROUP (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.can_restore_individual_default">can_restore_individual_default (powpowerman.PowerScheme のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag.CANCEL_REMOVE">CANCEL_REMOVE (powdeviceinfo.cfgmgr.CMLocateFlag の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CAPABILITIES">CAPABILITIES (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_APPOINTMENTS">CAPABILITY_APPOINTMENTS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_CONTACTS">CAPABILITY_CONTACTS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_DOCUMENTS_LIBRARY">CAPABILITY_DOCUMENTS_LIBRARY (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_ENTERPRISE_AUTHENTICATION">CAPABILITY_ENTERPRISE_AUTHENTICATION (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_INTERNET_CLIENT">CAPABILITY_INTERNET_CLIENT (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_INTERNET_CLIENT_SERVER">CAPABILITY_INTERNET_CLIENT_SERVER (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_MUSIC_LIBRARY">CAPABILITY_MUSIC_LIBRARY (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_PICTURES_LIBRARY">CAPABILITY_PICTURES_LIBRARY (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_PRIVATE_NETWORK_CLIENT_SERVER">CAPABILITY_PRIVATE_NETWORK_CLIENT_SERVER (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_REMOVABLE_STORAGE">CAPABILITY_REMOVABLE_STORAGE (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_SHARED_USER_CERTIFICATES">CAPABILITY_SHARED_USER_CERTIFICATES (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CAPABILITY_VIDEOS_LIBRARY">CAPABILITY_VIDEOS_LIBRARY (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY">CATEGORY (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.CATEGORY">(powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_DESC_PLURAL">CATEGORY_DESC_PLURAL (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_DESC_SINGULAR">CATEGORY_DESC_SINGULAR (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_GROUP_DESC">CATEGORY_GROUP_DESC (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_GROUP_ICON">CATEGORY_GROUP_ICON (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CATEGORY_ICON">CATEGORY_ICON (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.CHARACTERISTICS">CHARACTERISTICS (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CHARACTERISTICS">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CHILDREN">CHILDREN (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CLASS">CLASS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.CLASS_CO_INSTALLERS">CLASS_CO_INSTALLERS (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.CLASS_GUID">CLASS_GUID (powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CLASS_GUID">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.CLASS_INSTALLER">CLASS_INSTALLER (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.CLASS_NAME">CLASS_NAME (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.classenumflags">classenumflags() (powdeviceinfo.cfgmgr.CMClass の静的メソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMInterfaceClass.classenumflags">(powdeviceinfo.cfgmgr.CMInterfaceClass の静的メソッド)</a>
+</li>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass.classenumflags">(powdeviceinfo.cfgmgr.CMSetupClass の静的メソッド)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass.classname_or_none">classname_or_none (powdeviceinfo.cfgmgr.CMSetupClass のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.classpropflags">classpropflags() (powdeviceinfo.cfgmgr.CMClass の静的メソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMInterfaceClass.classpropflags">(powdeviceinfo.cfgmgr.CMInterfaceClass の静的メソッド)</a>
+</li>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass.classpropflags">(powdeviceinfo.cfgmgr.CMSetupClass の静的メソッド)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass">CMClass (powdeviceinfo.cfgmgr のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice">CMDevice (powdeviceinfo.cfgmgr のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDeviceID">CMDeviceID (powdeviceinfo.cfgmgr のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMEnumerator">CMEnumerator (powdeviceinfo.cfgmgr のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMError">CMError</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMInterfaceClass">CMInterfaceClass (powdeviceinfo.cfgmgr のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag">CMLocateFlag (powdeviceinfo.cfgmgr のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass">CMSetupClass (powdeviceinfo.cfgmgr のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.COMPANION_APPS">COMPANION_APPS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.COMPATIBLE_IDS">COMPATIBLE_IDS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.COMPUTER">COMPUTER (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CONFIG_FLAGS">CONFIG_FLAGS (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CONFIG_FLAGS">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CONFIGURATION_ID">CONFIGURATION_ID (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CONSOLE_LOGON">CONSOLE_LOGON (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CONTAINER_ID">CONTAINER_ID (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMError.cr">cr (powdeviceinfo.cfgmgr.CMError の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.create">create() (powpowerman.PowerPossibleSetting の静的メソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.create">(powpowerman.PowerSetting の静的メソッド)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSchemeFactory.create_activescheme">create_activescheme() (powpowerman.PowerKnownSchemeFactory の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSchemeFactory.create_allpowerschemes">create_allpowerschemes() (powpowerman.PowerKnownSchemeFactory の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSchemeFactory.create_maxpowersavings">create_maxpowersavings() (powpowerman.PowerKnownSchemeFactory の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSchemeFactory.create_minpowersavings">create_minpowersavings() (powpowerman.PowerKnownSchemeFactory の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSchemeFactory.create_personality">create_personality() (powpowerman.PowerKnownSchemeFactory の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSchemeFactory.create_typicalpowersavings">create_typicalpowersavings() (powpowerman.PowerKnownSchemeFactory の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.create_wellknownsid">create_wellknownsid() (powsid.SID の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CREATOR_GROUP">CREATOR_GROUP (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CREATOR_GROUP_SERVER">CREATOR_GROUP_SERVER (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CREATOR_OWNER">CREATOR_OWNER (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CREATOR_OWNER_RIGHTS">CREATOR_OWNER_RIGHTS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.CREATOR_OWNER_SERVER">CREATOR_OWNER_SERVER (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.CREATOR_PROCESS_ID">CREATOR_PROCESS_ID (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.CURRENCY">CURRENCY (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.CURRENT_REVISION">CURRENT_REVISION (powsid.SID の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.CUSTOM_PRIVILEGED_PACKAGE_FAMILY_NAMES">CUSTOM_PRIVILEGED_PACKAGE_FAMILY_NAMES (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powguid.html#powguid.Guid.data">data (powguid.Guid の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DATE">DATE (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.dc_value">dc_value (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.dc_value_index">dc_value_index (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.dc_value_size">dc_value_size (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.dc_value_type">dc_value_type (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEBUGGER_SAFE">DEBUGGER_SAFE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DECIMAL">DECIMAL (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceClassDevicePropertyKeys.DEFAULT_INTERFACE">DEFAULT_INTERFACE (powdeviceinfo.devprop.DeviceInterfaceClassDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.DEFAULT_SERVICE">DEFAULT_SERVICE (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.delete_scheme">delete_scheme() (powpowerman.PowerScheme の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.DELETED_ACCOUNT">DELETED_ACCOUNT (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEPENDENCY_DEPENDENTS">DEPENDENCY_DEPENDENTS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEPENDENCY_PROVIDERS">DEPENDENCY_PROVIDERS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerEntry.description">description (powpowerman.PowerEntry のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.description_or_none">description_or_none (powdeviceinfo.cfgmgr.CMDevice のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.descriptions">descriptions (powpowerman.PowerPossibleSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.Desktop">Desktop (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.DETAILED_DESCRIPTION">DETAILED_DESCRIPTION (powdeviceinfo.devprop.DevicePackageDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEV_NODE_STATUS">DEV_NODE_STATUS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.DEV_TYPE">DEV_TYPE (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEV_TYPE">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DEVICE_DESC">DEVICE_DESC (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.DEVICE_DESCRIPTION1">DEVICE_DESCRIPTION1 (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.DEVICE_DESCRIPTION2">DEVICE_DESCRIPTION2 (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.DEVICE_FUNCTION_SUB_RANK">DEVICE_FUNCTION_SUB_RANK (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys">DeviceClassPropertyKeys (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys">DeviceContainerDevicePropertyKeys (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys">DeviceDisplayDevicePropertyKeys (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceClassDevicePropertyKeys">DeviceInterfaceClassDevicePropertyKeys (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys">DeviceInterfaceDevicePropertyKeys (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys">DevicePackageDevicePropertyKeys (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty">DeviceProperty (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyEmptyType">DevicePropertyEmptyType (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKey">DevicePropertyKey (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys">DevicePropertyKeys (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyModifier">DevicePropertyModifier (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyNullType">DevicePropertyNullType (powdeviceinfo.devprop のクラス)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType">DevicePropertyType (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceQueryDevicePropertyKeys">DeviceQueryDevicePropertyKeys (powdeviceinfo.devprop のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.devinst">devinst (powdeviceinfo.cfgmgr.CMDevice のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DEVPROPKEY">DEVPROPKEY (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DEVPROPTYPE">DEVPROPTYPE (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.DHP_REBALANCE_OPT_OUT">DHP_REBALANCE_OPT_OUT (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DHP_REBALANCE_POLICY">DHP_REBALANCE_POLICY (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.DIALUP">DIALUP (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.DIGEST_AUTHENTICATION">DIGEST_AUTHENTICATION (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.DISCOVERY_METHOD">DISCOVERY_METHOD (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.DISCOVERY_METHOD">(powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSubGroupGuid.DISK">DISK (powpowerman.PowerKnownSubGroupGuid の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.disk">disk() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_adaptive_powerdown">disk_adaptive_powerdown() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_burst_ignore_threshold">disk_burst_ignore_threshold() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_idle_timeout">disk_idle_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_max_power">disk_max_power() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_nvme_noppme">disk_nvme_noppme() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.disk_powerdown_timeout">disk_powerdown_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSubGroupGuid.DISPLAY">DISPLAY (powpowerman.PowerKnownSubGroupGuid の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.DOCUMENTATION_LINK">DOCUMENTATION_LINK (powdeviceinfo.devprop.DevicePackageDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.DOMAIN">DOMAIN (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.domainsid">domainsid (powsid.SID のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.DOUBLE">DOUBLE (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER">DRIVER (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_CO_INSTALLERS">DRIVER_CO_INSTALLERS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_DATE">DRIVER_DATE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_DESC">DRIVER_DESC (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_INF_PATH">DRIVER_INF_PATH (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_INF_SECTION">DRIVER_INF_SECTION (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_INF_SECTION_EXT">DRIVER_INF_SECTION_EXT (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_LOGO_LEVEL">DRIVER_LOGO_LEVEL (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_PROBLEM_DESC">DRIVER_PROBLEM_DESC (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_PROP_PAGE_PROVIDER">DRIVER_PROP_PAGE_PROVIDER (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_PROVIDER">DRIVER_PROVIDER (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_RANK">DRIVER_RANK (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.DRIVER_VERSION">DRIVER_VERSION (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.duplicate_scheme">duplicate_scheme() (powpowerman.PowerScheme の静的メソッド)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.EJECTION_RELATIONS">EJECTION_RELATIONS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.EMPTY">EMPTY (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.ENABLED">ENABLED (powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.energysaver">energysaver() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ENTERPRISE_CONTROLLERS">ENTERPRISE_CONTROLLERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.ENTERPRISE_READONLY_CONTROLLERS">ENTERPRISE_READONLY_CONTROLLERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.EnterpriseServer">EnterpriseServer (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.enumerate">enumerate() (powpowerman.PowerScheme の静的メソッド)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.ENUMERATOR_NAME">ENUMERATOR_NAME (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.ERROR">ERROR (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.EXCLUSIVE">EXCLUSIVE (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.EXCLUSIVE">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.EXPAND_STR">EXPAND_STR (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.EXPERIENCE_ID">EXPERIENCE_ID (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.EXTENDED_ADDRESS">EXTENDED_ADDRESS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.EXTENDED_CONFIGURATION_IDS">EXTENDED_CONFIGURATION_IDS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.FILETIME">FILETIME (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMSetupClass.find_by_classname">find_by_classname() (powdeviceinfo.cfgmgr.CMSetupClass の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRMWARE_DATE">FIRMWARE_DATE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRMWARE_REVISION">FIRMWARE_REVISION (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRMWARE_VENDOR">FIRMWARE_VENDOR (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRMWARE_VERSION">FIRMWARE_VERSION (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FIRST_INSTALL_DATE">FIRST_INSTALL_DATE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.FLOAT">FLOAT (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKey.fmtid">fmtid (powdeviceinfo.devprop.DevicePropertyKey の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.FRIENDLY_NAME">FRIENDLY_NAME (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.FRIENDLY_NAME">(powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys の属性)</a>
+</li>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FRIENDLY_NAME">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.friendly_name">friendly_name (powpowerman.PowerPossibleSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.FRIENDLY_NAME_ATTRIBUTES">FRIENDLY_NAME_ATTRIBUTES (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerEntry.friendlyname">friendlyname (powpowerman.PowerEntry のプロパティ)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.from_auths">from_auths() (powsid.SID の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKey.from_define">from_define() (powdeviceinfo.devprop.DevicePropertyKey の静的メソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powguid.html#powguid.Guid.from_define">(powguid.Guid の静的メソッド)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powguid.html#powguid.Guid.from_parts_int">from_parts_int() (powguid.Guid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powguid.html#powguid.Guid.from_parts_str">from_parts_str() (powguid.Guid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powguid.html#powguid.Guid.from_str">from_str() (powguid.Guid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powguid.html#powguid.Guid.from_str_b">from_str_b() (powguid.Guid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powguid.html#powguid.Guid.from_str_d">from_str_d() (powguid.Guid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.from_strsid">from_strsid() (powsid.SID の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.FULL_RESOURCE_DESCRIPTOR">FULL_RESOURCE_DESCRIPTOR (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.GENERIC_DRIVER_INSTALLED">GENERIC_DRIVER_INSTALLED (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.get_description">get_description() (powpowerman.PowerPossibleSetting のメソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.get_friendly_name">get_friendly_name() (powpowerman.PowerPossibleSetting のメソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatform.get_platform_role_ex">get_platform_role_ex() (powpowerman.PowerPlatform の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.get_prop">get_prop() (powdeviceinfo.cfgmgr.CMClass のメソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.get_prop">(powdeviceinfo.cfgmgr.CMDevice のメソッド)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.get_prop_or_none">get_prop_or_none() (powdeviceinfo.cfgmgr.CMClass のメソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.get_prop_or_none">(powdeviceinfo.cfgmgr.CMDevice のメソッド)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powsid.html#powsid.SID.get_required_len">get_required_len() (powsid.SID の静的メソッド)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.SID.get_subsidauth_at">get_subsidauth_at() (powsid.SID のメソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.get_value">get_value() (powpowerman.PowerPossibleSetting のメソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.get_value_size">get_value_size() (powpowerman.PowerPossibleSetting のメソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.get_value_type">get_value_type() (powpowerman.PowerPossibleSetting のメソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.graphics">graphics() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.GROUP">GROUP (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.guid">guid (powdeviceinfo.cfgmgr.CMClass のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.GUID">GUID (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powguid.html#powguid.Guid">Guid (powguid のクラス)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.HARDWARE_IDS">HARDWARE_IDS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.has_equal_domain">has_equal_domain() (powsid.SID のメソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.has_equal_prefix">has_equal_prefix() (powsid.SID のメソッド)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.HAS_PROBLEM">HAS_PROBLEM (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.HAS_PROBLEM">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.HIGH_LABEL">HIGH_LABEL (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.I_USER">I_USER (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.ICON">ICON (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.ICON">(powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.ICON">(powdeviceinfo.devprop.DevicePackageDevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.ICON_PATH">ICON_PATH (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerEntry.iconres_specifier">iconres_specifier (powpowerman.PowerEntry のプロパティ)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.identifyauth">identifyauth (powsid.SID のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_deep_sleep_enabled">idleresidency_deep_sleep_enabled() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_disk_coalescing_powerdown_timeout">idleresidency_disk_coalescing_powerdown_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.idleresidency_execution_required_request_timeout">idleresidency_execution_required_request_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.idleresiliency">idleresiliency() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.import_scheme">import_scheme() (powpowerman.PowerScheme の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.IN_LOCAL_MACHINE_CONTAINER">IN_LOCAL_MACHINE_CONTAINER (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.INSTALL_DATE">INSTALL_DATE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.INSTALL_IN_PROGRESS">INSTALL_IN_PROGRESS (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.INSTALL_STATE">INSTALL_STATE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.INSTANCE_ID">INSTANCE_ID (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.instanceid_or_none">instanceid_or_none (powdeviceinfo.cfgmgr.CMClass のプロパティ)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.instanceid_or_none">(powdeviceinfo.cfgmgr.CMDevice のプロパティ)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.INT16">INT16 (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.INT32">INT32 (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.INT64">INT64 (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.int_or_none">int_or_none (powdeviceinfo.devprop.DeviceProperty のプロパティ)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.INTERACTIVE">INTERACTIVE (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.intsteer">intsteer() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.INVALID">INVALID (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.is_active">is_active() (powpowerman.PowerScheme のメソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.IS_ASSOCIATEABLE_BY_USER_ACTION">IS_ASSOCIATEABLE_BY_USER_ACTION (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_AUTHENTICATED">IS_AUTHENTICATED (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_CONNECTED">IS_CONNECTED (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_DEFAULT_DEVICE">IS_DEFAULT_DEVICE (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_DEVICE_UNIQUELY_IDENTIFIABLE">IS_DEVICE_UNIQUELY_IDENTIFIABLE (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_ENCRYPTED">IS_ENCRYPTED (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.is_index_valid">is_index_valid() (powpowerman.PowerPossibleSetting のメソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_LOCAL_MACHINE">IS_LOCAL_MACHINE (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_METADATA_SEARCH_IN_PROGRESS">IS_METADATA_SEARCH_IN_PROGRESS (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_NETWORK_DEVICE">IS_NETWORK_DEVICE (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.IS_NETWORK_DEVICE">(powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_NOT_INTERESTING_FOR_DISPLAY">IS_NOT_INTERESTING_FOR_DISPLAY (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.IS_NOT_INTERESTING_FOR_DISPLAY">(powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_PAIRED">IS_PAIRED (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.IS_PRESENT">IS_PRESENT (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.is_range_defined">is_range_defined (powpowerman.PowerPossibleSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_REBOOT_REQUIRED">IS_REBOOT_REQUIRED (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.IS_REBOOT_REQUIRED">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_SHARED_DEVICE">IS_SHARED_DEVICE (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.IS_SHOW_IN_DISCONNECTED_STATE">IS_SHOW_IN_DISCONNECTED_STATE (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.IS_SHOW_IN_DISCONNECTED_STATE">(powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powsid.html#powsid.SID.is_valid">is_valid (powsid.SID のプロパティ)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.is_wellknownsid">is_wellknownsid() (powsid.SID のメソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.iter">iter() (powdeviceinfo.cfgmgr.CMClass のクラスメソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMEnumerator.iter">(powdeviceinfo.cfgmgr.CMEnumerator の静的メソッド)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_all">iter_all() (powdeviceinfo.cfgmgr.CMDevice の静的メソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDeviceID.iter_all">(powdeviceinfo.cfgmgr.CMDeviceID の静的メソッド)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDeviceID.iter_by_class">iter_by_class() (powdeviceinfo.cfgmgr.CMDeviceID の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDeviceID.iter_by_enumerator">iter_by_enumerator() (powdeviceinfo.cfgmgr.CMDeviceID の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_class">iter_deviceid_by_class() (powdeviceinfo.cfgmgr.CMDevice の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_classguid">iter_deviceid_by_classguid() (powdeviceinfo.cfgmgr.CMDevice の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_classid">iter_deviceid_by_classid() (powdeviceinfo.cfgmgr.CMDevice の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_classname">iter_deviceid_by_classname() (powdeviceinfo.cfgmgr.CMDevice の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.iter_deviceid_by_enumerator">iter_deviceid_by_enumerator() (powdeviceinfo.cfgmgr.CMDevice の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.iter_settings">iter_settings() (powpowerman.PowerScheme のメソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSubGroup.iter_settings">(powpowerman.PowerSubGroup のメソッド)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.iter_subgroups">iter_subgroups() (powpowerman.PowerScheme のメソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.iter_value_indexes">iter_value_indexes() (powpowerman.PowerPossibleSetting のメソッド)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="K">K</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.key">key (powdeviceinfo.devprop.DeviceProperty の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.LABEL">LABEL (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LAST_ARRIVAL_DATE">LAST_ARRIVAL_DATE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.LAST_CONNECTED">LAST_CONNECTED (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LAST_REMOVAL_DATE">LAST_REMOVAL_DATE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.LAST_SEEN">LAST_SEEN (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.LAUNCH_DEVICE_STAGE_FROM_EXPLORER">LAUNCH_DEVICE_STAGE_FROM_EXPLORER (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.LAUNCH_DEVICE_STAGE_ON_DEVICE_CONNECT">LAUNCH_DEVICE_STAGE_ON_DEVICE_CONNECT (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LEGACY">LEGACY (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LEGACY_BUS_TYPE">LEGACY_BUS_TYPE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.LINK">LINK (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyModifier.LIST">LIST (powdeviceinfo.devprop.DevicePropertyModifier の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.LOCAL">LOCAL (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.LOCAL_ACCOUNT">LOCAL_ACCOUNT (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.LOCAL_ACCOUNT_AND_ADMINISTRATOR">LOCAL_ACCOUNT_AND_ADMINISTRATOR (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.LOCAL_LOGON">LOCAL_LOGON (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.LOCAL_SERVICE">LOCAL_SERVICE (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.LOCAL_SYSTEM">LOCAL_SYSTEM (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LOCATION_INFO">LOCATION_INFO (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LOCATION_PATHS">LOCATION_PATHS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.LOGON_IDS">LOGON_IDS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.LOGON_SESSION">LOGON_SESSION (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.lookup_accountname">lookup_accountname() (powsid.SID の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.lookup_accountsid">lookup_accountsid() (powsid.SID のメソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.lookup_currentuser">lookup_currentuser() (powsid.SID の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.lookup_localcomputer">lookup_localcomputer() (powsid.SID の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.LOW_LABEL">LOW_LABEL (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.LOWER_FILTERS">LOWER_FILTERS (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.LOWER_FILTERS">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.MANUFACTURER">MANUFACTURER (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MANUFACTURER">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MANUFACTURER_ATTRIBUTES">MANUFACTURER_ATTRIBUTES (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MATCHING_DEVICE_ID">MATCHING_DEVICE_ID (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.MAX_SUB_AUTHORITIES">MAX_SUB_AUTHORITIES (powsid.SID の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.Maximum">Maximum (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.MEDIUM_LABEL">MEDIUM_LABEL (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.MEDIUM_PLUS_LABEL">MEDIUM_PLUS_LABEL (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.METADATA_CABINET">METADATA_CABINET (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.METADATA_CHECKSUM">METADATA_CHECKSUM (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.METADATA_PATH">METADATA_PATH (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.Mobile">Mobile (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.MODEL">MODEL (powdeviceinfo.devprop.DevicePackageDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MODEL">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.MODEL_ID">MODEL_ID (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.MODEL_NAME">MODEL_NAME (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.MODEL_NUMBER">MODEL_NUMBER (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li>
+    module
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.html#module-powdeviceinfo">powdeviceinfo</a>
+</li>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#module-powdeviceinfo.cfgmgr">powdeviceinfo.cfgmgr</a>
+</li>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.crresult.html#module-powdeviceinfo.cfgmgr.crresult">powdeviceinfo.cfgmgr.crresult</a>
+</li>
+        <li><a href="apiref/powdeviceinfo.devprop.html#module-powdeviceinfo.devprop">powdeviceinfo.devprop</a>
+</li>
+        <li><a href="apiref/powguid.html#module-powguid">powguid</a>
+</li>
+        <li><a href="apiref/powpowerman.html#module-powpowerman">powpowerman</a>
+</li>
+        <li><a href="apiref/powpowerman.knownguid.html#module-powpowerman.knownguid">powpowerman.knownguid</a>
+</li>
+        <li><a href="apiref/powsid.html#module-powsid">powsid</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.MULTI_STR">MULTI_STR (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.NAME">NAME (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceClassDevicePropertyKeys.NAME">(powdeviceinfo.devprop.DeviceInterfaceClassDevicePropertyKeys の属性)</a>
+</li>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.NAME">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powsid.html#powsid.SID.AccountInfo.name">name (powsid.SID.AccountInfo の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.name_or_none">name_or_none (powdeviceinfo.cfgmgr.CMClass のプロパティ)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.name_or_none">(powdeviceinfo.cfgmgr.CMDevice のプロパティ)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.NETWORK">NETWORK (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.NETWORK_SERVICE">NETWORK_SERVICE (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.NEW_ENTERPRISE_READONLY_CONTROLLERS">NEW_ENTERPRISE_READONLY_CONTROLLERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSubGroupGuid.NO">NO (powpowerman.PowerKnownSubGroupGuid の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.NO_CONNECT_SOUND">NO_CONNECT_SOUND (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.NO_DISPLAY_CLASS">NO_DISPLAY_CLASS (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.NO_INSTALL_CLASS">NO_INSTALL_CLASS (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.NO_USE_CLASS">NO_USE_CLASS (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag.NO_VALIDATION">NO_VALIDATION (powdeviceinfo.cfgmgr.CMLocateFlag の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.NON_CACHEABLE_PRINCIPALS_GROUP">NON_CACHEABLE_PRINCIPALS_GROUP (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.NONE">NONE (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids.none">none() (powpowerman.knownguid.PowerModeGuids の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag.NORMAL">NORMAL (powdeviceinfo.cfgmgr.CMLocateFlag の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.nosubgroup">nosubgroup (powpowerman.PowerScheme のプロパティ)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.NT_AUTHORITY">NT_AUTHORITY (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.NTLM_AUTHENTICATION">NTLM_AUTHENTICATION (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.NTSTATUS">NTSTATUS (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.NULL">NULL (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.NULL">(powsid.WellKnownSIDType の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.NUMA_NODE">NUMA_NODE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.NUMA_PROXIMITY_DOMAIN">NUMA_PROXIMITY_DOMAIN (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceQueryDevicePropertyKeys.OBJECT_TYPE">OBJECT_TYPE (powdeviceinfo.devprop.DeviceQueryDevicePropertyKeys の属性)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.OTHER_ORGANIZATION">OTHER_ORGANIZATION (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PARENT">PARENT (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powguid.html#powguid.Guid.parts">parts (powguid.Guid のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.pciexpress">pciexpress() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSubGroupGuid.PCIEXPRESS_SETTINGS">PCIEXPRESS_SETTINGS (powpowerman.PowerKnownSubGroupGuid の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PDO_NAME">PDO_NAME (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids.performance">performance() (powpowerman.knownguid.PowerModeGuids の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.PerformanceServer">PerformanceServer (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMLocateFlag.PHANTOM">PHANTOM (powdeviceinfo.cfgmgr.CMLocateFlag の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PHYSICAL_DEVICE_LOCATION">PHYSICAL_DEVICE_LOCATION (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKey.pid">pid (powdeviceinfo.devprop.DevicePropertyKey の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatform.PLATFORM_ROLE_VERSION">PLATFORM_ROLE_VERSION (powpowerman.PowerPlatform の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.POST_INSTALL_IN_PROGRESS">POST_INSTALL_IN_PROGRESS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li>
+    powdeviceinfo
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.html#module-powdeviceinfo">module</a>
+</li>
+      </ul></li>
+      <li>
+    powdeviceinfo.cfgmgr
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#module-powdeviceinfo.cfgmgr">module</a>
+</li>
+      </ul></li>
+      <li>
+    powdeviceinfo.cfgmgr.crresult
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.crresult.html#module-powdeviceinfo.cfgmgr.crresult">module</a>
+</li>
+      </ul></li>
+      <li>
+    powdeviceinfo.devprop
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#module-powdeviceinfo.devprop">module</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.POWER_DATA">POWER_DATA (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.POWER_RELATIONS">POWER_RELATIONS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerEntry">PowerEntry (powpowerman のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSchemeFactory">PowerKnownSchemeFactory (powpowerman のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid">PowerKnownSettingGuid (powpowerman.knownguid のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSubGroupGuid">PowerKnownSubGroupGuid (powpowerman のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid">PowerKnownSubgroupGuid (powpowerman.knownguid のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerModeGuids">PowerModeGuids (powpowerman.knownguid のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatform">PowerPlatform (powpowerman のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole">PowerPlatformRole (powpowerman のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting">PowerPossibleSetting (powpowerman のクラス)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme">PowerScheme (powpowerman のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting">PowerSetting (powpowerman のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValue">PowerSettingValue (powpowerman のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType">PowerSettingValueType (powpowerman のクラス)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSubGroup">PowerSubGroup (powpowerman のクラス)</a>
+</li>
+      <li>
+    powguid
+
+      <ul>
+        <li><a href="apiref/powguid.html#module-powguid">module</a>
+</li>
+      </ul></li>
+      <li>
+    powpowerman
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#module-powpowerman">module</a>
+</li>
+      </ul></li>
+      <li>
+    powpowerman.knownguid
+
+      <ul>
+        <li><a href="apiref/powpowerman.knownguid.html#module-powpowerman.knownguid">module</a>
+</li>
+      </ul></li>
+      <li>
+    powsid
+
+      <ul>
+        <li><a href="apiref/powsid.html#module-powsid">module</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PRESENCE_NOT_FOR_DEVICE">PRESENCE_NOT_FOR_DEVICE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.PRIMARY_CATEGORY">PRIMARY_CATEGORY (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PRIMARY_COMPANION_APP">PRIMARY_COMPANION_APP (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.PRIVILEGED_PACKAGE_FAMILY_NAMES">PRIVILEGED_PACKAGE_FAMILY_NAMES (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PROBLEM_CODE">PROBLEM_CODE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.PROBLEM_STATUS">PROBLEM_STATUS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.processor">processor() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSubGroupGuid.PROCESSOR_SETTINGS">PROCESSOR_SETTINGS (powpowerman.PowerKnownSubGroupGuid の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.PROP_PAGE_PROVIDER">PROP_PAGE_PROVIDER (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.propdict">propdict (powdeviceinfo.cfgmgr.CMDevice のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.propkeycount">propkeycount (powdeviceinfo.cfgmgr.CMClass のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.propkeys">propkeys (powdeviceinfo.cfgmgr.CMClass のプロパティ)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.propkeys">(powdeviceinfo.cfgmgr.CMDevice のプロパティ)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.propkeyscount">propkeyscount (powdeviceinfo.cfgmgr.CMDevice のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMClass.props">props (powdeviceinfo.cfgmgr.CMClass のプロパティ)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.props">(powdeviceinfo.cfgmgr.CMDevice のプロパティ)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMDevice.props_iter">props_iter (powdeviceinfo.cfgmgr.CMDevice のプロパティ)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.PROXY">PROXY (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValue.raw">raw (powpowerman.PowerSettingValue の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.RECOMMENDED_SUB_AUTHORITIES">RECOMMENDED_SUB_AUTHORITIES (powsid.SID の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.AccountInfo.refdomainname">refdomainname (powsid.SID.AccountInfo の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.REFERENCE_STRING">REFERENCE_STRING (powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.REMOTE_LOGON_ID">REMOTE_LOGON_ID (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REMOVAL_POLICY">REMOVAL_POLICY (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REMOVAL_POLICY_DEFAULT">REMOVAL_POLICY_DEFAULT (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REMOVAL_POLICY_OVERRIDE">REMOVAL_POLICY_OVERRIDE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REMOVAL_RELATIONS">REMOVAL_RELATIONS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REPORTED">REPORTED (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.REPORTED_DEVICE_IDS_HASH">REPORTED_DEVICE_IDS_HASH (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.REQUIRES_PAIRING_ELEVATION">REQUIRES_PAIRING_ELEVATION (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.REQUIRES_UNINSTALL_ELEVATION">REQUIRES_UNINSTALL_ELEVATION (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.REQUIRES_UNINSTALL_ELEVATION">(powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.RESOURCE_LIST">RESOURCE_LIST (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.RESOURCE_PICKER_EXCEPTIONS">RESOURCE_PICKER_EXCEPTIONS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.RESOURCE_PICKER_TAGS">RESOURCE_PICKER_TAGS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.RESOURCE_REQUIREMENTS_LIST">RESOURCE_REQUIREMENTS_LIST (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.RESTRICTED">RESTRICTED (powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.RESTRICTED_CODE">RESTRICTED_CODE (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.S_CHANNEL_AUTHENTICATION">S_CHANNEL_AUTHENTICATION (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SAFE_REMOVAL_REQUIRED">SAFE_REMOVAL_REQUIRED (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SAFE_REMOVAL_REQUIRED_OVERRIDE">SAFE_REMOVAL_REQUIRED_OVERRIDE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.SBYTE">SBYTE (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.SCHEMATIC_NAME">SCHEMATIC_NAME (powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.scheme">scheme (powpowerman.PowerSetting のプロパティ)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSubGroup.scheme">(powpowerman.PowerSubGroup のプロパティ)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.scheme_guid">scheme_guid (powpowerman.PowerScheme のプロパティ)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.scheme_guid">(powpowerman.PowerSetting のプロパティ)</a>
+</li>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSubGroup.scheme_guid">(powpowerman.PowerSubGroup のプロパティ)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerEntry.scheme_guid_ref">scheme_guid_ref (powpowerman.PowerEntry のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.SECURITY">SECURITY (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SECURITY">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.SECURITY_DESCRIPTOR">SECURITY_DESCRIPTOR (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.SECURITY_DESCRIPTOR_STRING">SECURITY_DESCRIPTOR_STRING (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.SECURITY_SDS">SECURITY_SDS (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SECURITY_SDS">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.SELF">SELF (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SERVICE">SERVICE (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.SERVICE">(powsid.WellKnownSIDType の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SESSION_ID">SESSION_ID (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.set_active">set_active() (powpowerman.PowerScheme のメソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.set_subsidauth_at">set_subsidauth_at() (powsid.SID のメソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.setting_guid">setting_guid (powpowerman.PowerPossibleSetting のプロパティ)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.setting_guid">(powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerEntry.setting_guid_ref">setting_guid_ref (powpowerman.PowerEntry のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.settings">settings() (powpowerman.PowerScheme のメソッド)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSubGroup.settings">(powpowerman.PowerSubGroup のメソッド)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SHOW_IN_UNINSTALL_UI">SHOW_IN_UNINSTALL_UI (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SIBLINGS">SIBLINGS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID">SID (powsid のクラス)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.AccountInfo">SID.AccountInfo (powsid のクラス)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse">SIDNameUse (powsid のクラス)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SIGNAL_STRENGTH">SIGNAL_STRENGTH (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.SILENT_INSTALL">SILENT_INSTALL (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.Slate">Slate (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSubGroupGuid.SLEEP">SLEEP (powpowerman.PowerKnownSubGroupGuid の属性)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.sleep">sleep() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_allow_awaymode">sleep_allow_awaymode() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_critical_power_transition">sleep_critical_power_transition() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_hibernate_timeout">sleep_hibernate_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_idle_threshold">sleep_idle_threshold() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_budget_grace_period">sleep_standby_budget_grace_period() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_budget_percent">sleep_standby_budget_percent() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_standby_timeout">sleep_standby_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_system_awaymode">sleep_system_awaymode() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_unattend_sleep_timeout">sleep_unattend_sleep_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.sleep_user_presence_prediction">sleep_user_presence_prediction() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.SOFT_RESTART_SUPPORTED">SOFT_RESTART_SUPPORTED (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.SOHOServer">SOHOServer (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.STACK">STACK (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.STR">STR (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.str_or_none">str_or_none (powdeviceinfo.devprop.DeviceProperty のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.STRING">STRING (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.STRING_INDIRECT">STRING_INDIRECT (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.STRING_LIST">STRING_LIST (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.subauthcount">subauthcount (powsid.SID のプロパティ)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SID.subauths">subauths (powsid.SID のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.subgroup">subgroup (powpowerman.PowerSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.subgroup_battery">subgroup_battery (powpowerman.PowerScheme のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.subgroup_disk">subgroup_disk (powpowerman.PowerScheme のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.subgroup_display">subgroup_display (powpowerman.PowerScheme のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.subgroup_guid">subgroup_guid (powpowerman.PowerPossibleSetting のプロパティ)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSetting.subgroup_guid">(powpowerman.PowerSetting のプロパティ)</a>
+</li>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSubGroup.subgroup_guid">(powpowerman.PowerSubGroup のプロパティ)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerEntry.subgroup_guid_ref">subgroup_guid_ref (powpowerman.PowerEntry のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.subgroup_pciexpress_settings">subgroup_pciexpress_settings (powpowerman.PowerScheme のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.subgroup_processorsettings">subgroup_processorsettings (powpowerman.PowerScheme のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.subgroup_sleep">subgroup_sleep (powpowerman.PowerScheme のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.subgroup_sysbutton">subgroup_sysbutton (powpowerman.PowerScheme のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerScheme.subgroups">subgroups() (powpowerman.PowerScheme のメソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerKnownSubGroupGuid.SYSTEM_BUTTON">SYSTEM_BUTTON (powpowerman.PowerKnownSubGroupGuid の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.system_button">system_button() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.SYSTEM_LABEL">SYSTEM_LABEL (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.TERMINAL_SERVER">TERMINAL_SERVER (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.THIS_ORGANIZATION">THIS_ORGANIZATION (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.THIS_ORGANIZATION_CERTIFICATE">THIS_ORGANIZATION_CERTIFICATE (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMError.throw_if_failed">throw_if_failed() (powdeviceinfo.cfgmgr.CMError の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.cfgmgr.html#powdeviceinfo.cfgmgr.CMError.throw_ifnot_buffersmall">throw_ifnot_buffersmall() (powdeviceinfo.cfgmgr.CMError の静的メソッド)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powguid.html#powguid.Guid.to_str">to_str() (powguid.Guid のメソッド)</a>
+</li>
+      <li><a href="apiref/powguid.html#powguid.Guid.to_str_b">to_str_b() (powguid.Guid のメソッド)</a>
+</li>
+      <li><a href="apiref/powguid.html#powguid.Guid.to_str_d">to_str_d() (powguid.Guid のメソッド)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.TRANSPORT_RELATIONS">TRANSPORT_RELATIONS (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.type">type (powdeviceinfo.devprop.DeviceProperty の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValue.type">(powpowerman.PowerSettingValue の属性)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.UI_NUMBER">UI_NUMBER (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.UI_NUMBER_DESC_FORMAT">UI_NUMBER_DESC_FORMAT (powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.UINT16">UINT16 (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.UINT32">UINT32 (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.UINT32_BE">UINT32_BE (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.UINT32_LE">UINT32_LE (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyType.UINT64">UINT64 (powdeviceinfo.devprop.DevicePropertyType の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValueType.UINT64_LE">UINT64_LE (powpowerman.PowerSettingValueType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.UNKNOWN">UNKNOWN (powsid.SIDNameUse の属性)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.UNPAIR_UNINSTALL">UNPAIR_UNINSTALL (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys.UNPAIR_UNINSTALL">(powdeviceinfo.devprop.DeviceDisplayDevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys.UNRESTRICTED_APP_CAPABILITIES">UNRESTRICTED_APP_CAPABILITIES (powdeviceinfo.devprop.DeviceInterfaceDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.Unspecified">Unspecified (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.UNTRUSTED_LABEL">UNTRUSTED_LABEL (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceClassPropertyKeys.UPPER_FILTERS">UPPER_FILTERS (powdeviceinfo.devprop.DeviceClassPropertyKeys の属性)</a>
+
+      <ul>
+        <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePropertyKeys.UPPER_FILTERS">(powdeviceinfo.devprop.DevicePropertyKeys の属性)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powsid.html#powsid.SID.AccountInfo.use">use (powsid.SID.AccountInfo の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.USER">USER (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.USER_MODE_DRIVERS">USER_MODE_DRIVERS (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.value">value (powdeviceinfo.devprop.DeviceProperty のプロパティ)</a>
+
+      <ul>
+        <li><a href="apiref/powpowerman.html#powpowerman.PowerSettingValue.value">(powpowerman.PowerSettingValue のプロパティ)</a>
+</li>
+      </ul></li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceProperty.value_raw">value_raw (powdeviceinfo.devprop.DeviceProperty の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.value_size0">value_size0 (powpowerman.PowerPossibleSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.value_type0">value_type0 (powpowerman.PowerPossibleSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPossibleSetting.values">values (powpowerman.PowerPossibleSetting のプロパティ)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DevicePackageDevicePropertyKeys.VENDOR_WEB_SITE">VENDOR_WEB_SITE (powdeviceinfo.devprop.DevicePackageDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powdeviceinfo.devprop.html#powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys.VERSION">VERSION (powdeviceinfo.devprop.DeviceContainerDevicePropertyKeys の属性)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSubgroupGuid.video">video() (powpowerman.knownguid.PowerKnownSubgroupGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_display_brightness">video_adaptive_display_brightness() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_percent_increase">video_adaptive_percent_increase() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_adaptive_powerdown">video_adaptive_powerdown() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_advanced_color_quality_bits">video_advanced_color_quality_bits() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_allow_display_required">video_allow_display_required() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_annoyance_timeout">video_annoyance_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_console_display_state">video_console_display_state() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_console_lock_timeout">video_console_lock_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_current_monitor_beightness">video_current_monitor_beightness() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_devicepowerpolicy_brightness">video_devicepowerpolicy_brightness() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_devicepowerpolicy_dim_brightness">video_devicepowerpolicy_dim_brightness() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_dim_timeout">video_dim_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_hibernate_fasts4_policy">video_hibernate_fasts4_policy() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_monitor_power_on">video_monitor_power_on() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+      <li><a href="apiref/powpowerman.knownguid.html#powpowerman.knownguid.PowerKnownSettingGuid.video_powerdown_timeout">video_powerdown_timeout() (powpowerman.knownguid.PowerKnownSettingGuid の静的メソッド)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powsid.html#powsid.SIDNameUse.WELL_KNOWN_GROUP">WELL_KNOWN_GROUP (powsid.SIDNameUse の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType">WellKnownSIDType (powsid のクラス)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="apiref/powpowerman.html#powpowerman.PowerPlatformRole.Workstation">Workstation (powpowerman.PowerPlatformRole の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.WORLD">WORLD (powsid.WellKnownSIDType の属性)</a>
+</li>
+      <li><a href="apiref/powsid.html#powsid.WellKnownSIDType.WRITE_RESTRICTED_CODE">WRITE_RESTRICTED_CODE (powsid.WellKnownSIDType の属性)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+著者 poti-san
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, poti-san.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
